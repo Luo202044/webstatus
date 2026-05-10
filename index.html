@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子域健康状态看板</title>
+    <style>
+        * { box-sizing: border-box; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; }
+        body { background: #f1f5f9; margin: 0; padding: 2rem 1rem; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .header { text-align: center; margin-bottom: 2rem; }
+        h1 { color: #0f172a; font-weight: 600; font-size: 1.8rem; margin-bottom: 0.25rem; }
+        .sub { color: #334155; font-size: 0.9rem; }
+        .last-update { background: white; display: inline-block; margin-top: 0.5rem; padding: 0.3rem 0.8rem; border-radius: 40px; font-size: 0.8rem; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+        .card { background: white; border-radius: 1rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); overflow: hidden; }
+        table { width: 100%; border-collapse: collapse; }
+        th { text-align: left; padding: 1rem 1rem; background: #f8fafc; font-weight: 600; color: #1e293b; border-bottom: 1px solid #e2e8f0; }
+        td { padding: 1rem 1rem; border-bottom: 1px solid #e2e8f0; vertical-align: middle; }
+        .status-badge { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.2rem 0.8rem; border-radius: 9999px; font-size: 0.8rem; font-weight: 500; }
+        .status-ok { background: #dcfce7; color: #166534; }
+        .status-bad { background: #fee2e2; color: #991b1b; }
+        .status-code { font-family: monospace; font-weight: 600; }
+        .response-time { font-family: monospace; color: #475569; }
+        .footer { text-align: center; margin-top: 2rem; font-size: 0.75rem; color: #475569; }
+        @media (max-width: 640px) { th, td { padding: 0.75rem; } .status-badge { font-size: 0.7rem; } }
+        .loader { text-align: center; padding: 2rem; color: #475569; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>🌐 子域健康监控</h1>
+        <div class="sub">同一个域名 · 不同子域 · 实时状态</div>
+        <div class="last-update" id="lastUpdateLabel">加载中...</div>
+    </div>
+
+    <div class="card">
+        <table id="statusTable">
+            <thead><tr><th>子域</th><th>状态</th><th>HTTP 状态码</th><th>响应时间</th><th>最后检查时间</th></tr></thead>
+            <tbody id="tableBody"><tr><td colspan="5" class="loader">⏳ 加载监控数据中...</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="footer">
+        数据由 GitHub Actions 每小时探测一次 | 状态码 2xx/3xx 视为正常
+    </div>
+</div>
+
+<script>
+    async function fetchData() {
+        try {
+            const [configRes, statusRes] = await Promise.all([
+                fetch('./config.json'),
+                fetch('./data/status.json')
+            ]);
+            if (!configRes.ok || !statusRes.ok) throw new Error('数据加载失败');
+            const config = await configRes.json();
+            const statusData = await statusRes.json();
+            const domains = config.domains;
+            const results = statusData.results || [];
+            const lastFullCheck = statusData.last_full_check;
+            if (lastFullCheck) {
+                const date = new Date(lastFullCheck);
+                document.getElementById('lastUpdateLabel').innerHTML = `📅 最后全局检查：${date.toLocaleString()}`;
+            } else {
+                document.getElementById('lastUpdateLabel').innerHTML = `⏱️ 暂无检查记录`;
+            }
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+            for (const domain of domains) {
+                const info = results.find(r => r.domain === domain);
+                if (!info) {
+                    tbody.appendChild(createRow(domain, null));
+                    continue;
+                }
+                tbody.appendChild(createRow(domain, info));
+            }
+        } catch (err) {
+            console.error(err);
+            document.getElementById('tableBody').innerHTML = `<tr><td colspan="5" class="loader">⚠️ 无法获取状态数据，请确认 data/status.json 是否存在。</td></tr>`;
+            document.getElementById('lastUpdateLabel').innerHTML = '❌ 数据加载失败';
+        }
+    }
+
+    function createRow(domain, info) {
+        const tr = document.createElement('tr');
+        const tdDomain = document.createElement('td');
+        tdDomain.textContent = domain;
+        tr.appendChild(tdDomain);
+        const tdStatus = document.createElement('td');
+        if (info && info.ok === true) {
+            tdStatus.innerHTML = `<span class="status-badge status-ok">✅ 正常</span>`;
+        } else if (info && info.ok === false) {
+            tdStatus.innerHTML = `<span class="status-badge status-bad">❌ 异常</span>`;
+        } else {
+            tdStatus.innerHTML = `<span class="status-badge status-bad">⏳ 无数据</span>`;
+        }
+        tr.appendChild(tdStatus);
+        const tdCode = document.createElement('td');
+        if (info && info.status_code) {
+            tdCode.innerHTML = `<span class="status-code">${info.status_code}</span>`;
+        } else if (info && info.status_code === null) {
+            tdCode.innerHTML = `<span class="status-code">超时/无响应</span>`;
+        } else {
+            tdCode.textContent = '—';
+        }
+        tr.appendChild(tdCode);
+        const tdTime = document.createElement('td');
+        if (info && info.response_time_ms) {
+            tdTime.innerHTML = `<span class="response-time">${info.response_time_ms} ms</span>`;
+        } else {
+            tdTime.textContent = '—';
+        }
+        tr.appendChild(tdTime);
+        const tdCheck = document.createElement('td');
+        if (info && info.checked_at) {
+            const d = new Date(info.checked_at);
+            tdCheck.textContent = d.toLocaleString();
+        } else {
+            tdCheck.textContent = '—';
+        }
+        tr.appendChild(tdCheck);
+        return tr;
+    }
+
+    // 自动刷新（每60秒）
+    let autoRefreshInterval;
+    function startAutoRefresh() {
+        if (autoRefreshInterval) clearInterval(autoRefreshInterval);
+        autoRefreshInterval = setInterval(() => { fetchData(); }, 60000);
+    }
+    fetchData().then(() => startAutoRefresh());
+</script>
+</body>
+</html>
