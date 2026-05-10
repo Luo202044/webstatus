@@ -12,8 +12,8 @@
         h1 { color: #0f172a; font-weight: 600; font-size: 1.8rem; margin-bottom: 0.25rem; }
         .sub { color: #334155; font-size: 0.9rem; }
         .last-update { background: white; display: inline-block; margin-top: 0.5rem; padding: 0.3rem 0.8rem; border-radius: 40px; font-size: 0.8rem; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
-        .card { background: white; border-radius: 1rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); overflow: hidden; }
-        table { width: 100%; border-collapse: collapse; }
+        .card { background: white; border-radius: 1rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; min-width: 600px; }
         th { text-align: left; padding: 1rem 1rem; background: #f8fafc; font-weight: 600; color: #1e293b; border-bottom: 1px solid #e2e8f0; }
         td { padding: 1rem 1rem; border-bottom: 1px solid #e2e8f0; vertical-align: middle; }
         .status-badge { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.2rem 0.8rem; border-radius: 9999px; font-size: 0.8rem; font-weight: 500; }
@@ -24,6 +24,7 @@
         .footer { text-align: center; margin-top: 2rem; font-size: 0.75rem; color: #475569; }
         @media (max-width: 640px) { th, td { padding: 0.75rem; } .status-badge { font-size: 0.7rem; } }
         .loader { text-align: center; padding: 2rem; color: #475569; }
+        .domain-sub { font-size: 0.7rem; color: #64748b; margin-top: 0.2rem; }
     </style>
 </head>
 <body>
@@ -36,57 +37,86 @@
 
     <div class="card">
         <table id="statusTable">
-            <thead><tr><th>子域</th><th>状态</th><th>HTTP 状态码</th><th>响应时间</th><th>最后检查时间</th></tr></thead>
-            <tbody id="tableBody"><tr><td colspan="5" class="loader">⏳ 加载监控数据中...</td></tr>
+            <thead>
+                <tr>
+                    <th>服务名称</th>
+                    <th>子域</th>
+                    <th>状态</th>
+                    <th>HTTP 状态码</th>
+                    <th>响应时间</th>
+                    <th>最后检查时间</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <tr><td colspan="6" class="loader">⏳ 加载监控数据中...</td></tr>
             </tbody>
         </table>
     </div>
     <div class="footer">
-        数据由 GitHub Actions 每小时探测一次 | 状态码 2xx/3xx 视为正常
+        数据由 GitHub 每小时探测一次 
     </div>
 </div>
 
 <script>
     async function fetchData() {
         try {
-            const [configRes, statusRes] = await Promise.all([
-                fetch('./config.json'),
-                fetch('./data/status.json')
-            ]);
-            if (!configRes.ok || !statusRes.ok) throw new Error('数据加载失败');
-            const config = await configRes.json();
+            const statusRes = await fetch('./data/status.json');
+            if (!statusRes.ok) throw new Error('数据加载失败');
             const statusData = await statusRes.json();
-            const domains = config.domains;
+            
             const results = statusData.results || [];
+            const configList = statusData.config || [];   // [{ domain, name }]
             const lastFullCheck = statusData.last_full_check;
+            
             if (lastFullCheck) {
                 const date = new Date(lastFullCheck);
                 document.getElementById('lastUpdateLabel').innerHTML = `📅 最后全局检查：${date.toLocaleString()}`;
             } else {
                 document.getElementById('lastUpdateLabel').innerHTML = `⏱️ 暂无检查记录`;
             }
+            
+            // 建立 domain -> name 映射
+            const nameMap = new Map();
+            for (const item of configList) {
+                nameMap.set(item.domain, item.name);
+            }
+            
+            // 建立 domain -> 状态结果映射
+            const resultMap = new Map();
+            for (const res of results) {
+                resultMap.set(res.domain, res);
+            }
+            
+            // 按 configList 顺序渲染（保持配置顺序）
             const tbody = document.getElementById('tableBody');
             tbody.innerHTML = '';
-            for (const domain of domains) {
-                const info = results.find(r => r.domain === domain);
-                if (!info) {
-                    tbody.appendChild(createRow(domain, null));
-                    continue;
-                }
-                tbody.appendChild(createRow(domain, info));
+            for (const item of configList) {
+                const domain = item.domain;
+                const name = item.name;
+                const info = resultMap.get(domain);
+                tbody.appendChild(createRow(domain, name, info));
             }
         } catch (err) {
             console.error(err);
-            document.getElementById('tableBody').innerHTML = `<tr><td colspan="5" class="loader">⚠️ 无法获取状态数据，请确认 data/status.json 是否存在。</td></tr>`;
+            document.getElementById('tableBody').innerHTML = `<tr><td colspan="6" class="loader">⚠️ 无法获取状态数据，请确认 data/status.json 是否存在。</td></tr>`;
             document.getElementById('lastUpdateLabel').innerHTML = '❌ 数据加载失败';
         }
     }
 
-    function createRow(domain, info) {
+    function createRow(domain, name, info) {
         const tr = document.createElement('tr');
+        
+        // 中文名称列
+        const tdName = document.createElement('td');
+        tdName.innerHTML = `<strong>${escapeHtml(name)}</strong>`;
+        tr.appendChild(tdName);
+        
+        // 子域列
         const tdDomain = document.createElement('td');
         tdDomain.textContent = domain;
         tr.appendChild(tdDomain);
+        
+        // 状态列
         const tdStatus = document.createElement('td');
         if (info && info.ok === true) {
             tdStatus.innerHTML = `<span class="status-badge status-ok">✅ 正常</span>`;
@@ -96,6 +126,8 @@
             tdStatus.innerHTML = `<span class="status-badge status-bad">⏳ 无数据</span>`;
         }
         tr.appendChild(tdStatus);
+        
+        // 状态码列
         const tdCode = document.createElement('td');
         if (info && info.status_code) {
             tdCode.innerHTML = `<span class="status-code">${info.status_code}</span>`;
@@ -105,6 +137,8 @@
             tdCode.textContent = '—';
         }
         tr.appendChild(tdCode);
+        
+        // 响应时间列
         const tdTime = document.createElement('td');
         if (info && info.response_time_ms) {
             tdTime.innerHTML = `<span class="response-time">${info.response_time_ms} ms</span>`;
@@ -112,6 +146,8 @@
             tdTime.textContent = '—';
         }
         tr.appendChild(tdTime);
+        
+        // 最后检查时间列
         const tdCheck = document.createElement('td');
         if (info && info.checked_at) {
             const d = new Date(info.checked_at);
@@ -120,10 +156,20 @@
             tdCheck.textContent = '—';
         }
         tr.appendChild(tdCheck);
+        
         return tr;
     }
+    
+    // 简单的防XSS辅助函数
+    function escapeHtml(str) {
+        return str.replace(/[&<>]/g, function(m) {
+            if (m === '&') return '&amp;';
+            if (m === '<') return '&lt;';
+            if (m === '>') return '&gt;';
+            return m;
+        });
+    }
 
-    // 自动刷新（每60秒）
     let autoRefreshInterval;
     function startAutoRefresh() {
         if (autoRefreshInterval) clearInterval(autoRefreshInterval);
