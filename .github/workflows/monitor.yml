@@ -1,0 +1,34 @@
+name: Monitor Subdomain Status
+
+on:
+  schedule:
+    # 每小时执行一次 (UTC 时间整点，北京时间 +8)
+    - cron: '0 * * * *'
+  workflow_dispatch:         # 允许手动触发
+
+jobs:
+  check-status:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write        # 需要写入 data/status.json
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run monitor script
+        env:
+          MONITOR_UA: ${{ secrets.MONITOR_UA }}   # 从 GitHub Secret 读取
+        run: python monitor.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/status.json
+          git diff --staged --quiet || git commit -m "Update status data [skip ci]"
+          git push
