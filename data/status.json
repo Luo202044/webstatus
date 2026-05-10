@@ -1,0 +1,31 @@
+{
+  "last_full_check": "2026-05-10T22:29:26.025691Z",
+  "results": [
+    {
+      "domain": "classin.xn--bgtt50a8xt.top",
+      "status_code": 403,
+      "ok": false,
+      "response_time_ms": 322,
+      "checked_at": "2026-05-10T22:29:25.727590Z",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "domain": "api.xn--bgtt50a8xt.top",
+      "status_code": 403,
+      "ok": false,
+      "response_time_ms": 298,
+      "checked_at": "2026-05-10T22:29:26.025583Z",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "config": [
+    {
+      "domain": "classin.xn--bgtt50a8xt.top",
+      "name": "\u4e3b\u7ad9"
+    },
+    {
+      "domain": "api.xn--bgtt50a8xt.top",
+      "name": "API \u7f51\u5173"
+    }
+  ]
+}
