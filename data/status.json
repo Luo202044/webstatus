@@ -1,21 +1,21 @@
 {
-  "last_full_check": "2026-05-10T22:29:26.025691Z",
+  "last_full_check": "2026-05-10T22:39:29.566026Z",
   "results": [
     {
       "domain": "classin.xn--bgtt50a8xt.top",
-      "status_code": 403,
-      "ok": false,
-      "response_time_ms": 322,
-      "checked_at": "2026-05-10T22:29:25.727590Z",
-      "error": "HTTP Error 403: Forbidden"
+      "status_code": 200,
+      "ok": true,
+      "response_time_ms": 101,
+      "checked_at": "2026-05-10T22:39:28.716728Z",
+      "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
-      "status_code": 403,
-      "ok": false,
-      "response_time_ms": 298,
-      "checked_at": "2026-05-10T22:29:26.025583Z",
-      "error": "HTTP Error 403: Forbidden"
+      "status_code": 200,
+      "ok": true,
+      "response_time_ms": 849,
+      "checked_at": "2026-05-10T22:39:29.565963Z",
+      "error": null
     }
   ],
   "config": [
