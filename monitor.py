@@ -4,10 +4,9 @@ import urllib.request
 import urllib.error
 import os
 from datetime import datetime
-from typing import Dict, List
+from typing import Dict, List, Any
 
 # 优先从环境变量读取 UA（GitHub Actions 中由 Secret 提供）
-# 本地测试时可以设置环境变量，或使用下面的默认值（仅用于测试，不会用在生产）
 DEFAULT_UA = "CustomHealthBot/1.2 (Compatible; LocalTest; Secured-UA/local_test_token)"
 CUSTOM_UA = os.environ.get("MONITOR_UA", DEFAULT_UA)
 
@@ -25,7 +24,6 @@ def check_status(domain: str) -> Dict:
         req.add_header('Accept-Language', 'zh-CN,zh;q=0.9,en;q=0.8')
         with urllib.request.urlopen(req, timeout=15) as resp:
             status_code = resp.getcode()
-            # 读取少量数据后关闭连接，减少流量
             _ = resp.read(1024)
             ok = 200 <= status_code < 400
     except urllib.error.HTTPError as e:
@@ -47,19 +45,23 @@ def check_status(domain: str) -> Dict:
     }
 
 def main():
-    # 读取需要监控的子域列表
     with open("config.json", "r") as f:
         config = json.load(f)
-    domains: List[str] = config["domains"]
+    
+    # 新结构：domains 是一个列表，每个元素包含 domain 和 name
+    domains_config = config["domains"]
+    # 提取纯域名列表用于探测
+    domains_to_check = [item["domain"] for item in domains_config]
 
-    results = [check_status(d) for d in domains]
+    results = [check_status(domain) for domain in domains_to_check]
 
-    # 确保 data 目录存在
     os.makedirs("data", exist_ok=True)
 
+    # 保存完整配置（包含中文名）和探测结果，供前端使用
     output = {
         "last_full_check": datetime.utcnow().isoformat() + "Z",
-        "results": results
+        "results": results,
+        "config": domains_config   # 前端可直接使用里面的 name
     }
     with open("data/status.json", "w") as f:
         json.dump(output, f, indent=2)
