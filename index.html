@@ -12,6 +12,8 @@
         h1 { color: #0f172a; font-weight: 600; font-size: 1.8rem; margin-bottom: 0.25rem; }
         .sub { color: #334155; font-size: 0.9rem; }
         .last-update { background: white; display: inline-block; margin-top: 0.5rem; padding: 0.3rem 0.8rem; border-radius: 40px; font-size: 0.8rem; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+        .refresh-cache-btn { background: #0f172a; border: none; color: white; padding: 0.5rem 1rem; border-radius: 2rem; font-weight: 500; cursor: pointer; transition: 0.2s; margin-top: 0.8rem; font-size: 0.85rem; }
+        .refresh-cache-btn:hover { background: #1e293b; }
         .card { background: white; border-radius: 1rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); overflow-x: auto; }
         table { width: 100%; border-collapse: collapse; min-width: 600px; }
         th { text-align: left; padding: 1rem 1rem; background: #f8fafc; font-weight: 600; color: #1e293b; border-bottom: 1px solid #e2e8f0; }
@@ -24,7 +26,6 @@
         .footer { text-align: center; margin-top: 2rem; font-size: 0.75rem; color: #475569; }
         @media (max-width: 640px) { th, td { padding: 0.75rem; } .status-badge { font-size: 0.7rem; } }
         .loader { text-align: center; padding: 2rem; color: #475569; }
-        .domain-sub { font-size: 0.7rem; color: #64748b; margin-top: 0.2rem; }
     </style>
 </head>
 <body>
@@ -33,13 +34,16 @@
         <h1>🌐 子域健康监控</h1>
         <div class="sub">同一个域名 · 不同子域 · 实时状态</div>
         <div class="last-update" id="lastUpdateLabel">加载中...</div>
+        <div>
+            <button class="refresh-cache-btn" id="forceRefreshBtn">🔄 强制刷新缓存</button>
+        </div>
     </div>
 
     <div class="card">
         <table id="statusTable">
             <thead>
                 <tr>
-                    <th>服务名称</th>
+                    <th>服务名</th>
                     <th>子域</th>
                     <th>状态</th>
                     <th>HTTP 状态码</th>
@@ -53,19 +57,28 @@
         </table>
     </div>
     <div class="footer">
-        数据由 GitHub 每小时探测一次 
+        数据由 GitHub Actions 每小时探测一次 | 状态码 2xx/3xx 视为正常
     </div>
 </div>
 
 <script>
+    // 强制刷新整个页面（绕过缓存）
+    document.getElementById('forceRefreshBtn').addEventListener('click', function() {
+        location.reload(true);  // true 表示强制从服务器重新加载
+    });
+
     async function fetchData() {
         try {
-            const statusRes = await fetch('./data/status.json');
+            // 为了避免自动刷新时也使用缓存，可以在请求时添加时间戳参数（但 data/status.json 是静态文件，浏览器可能缓存）
+            // 更好的方式：在 fetch 时添加 cache: 'no-cache' 或时间戳
+            const statusRes = await fetch('./data/status.json?' + Date.now(), {
+                cache: 'no-cache'
+            });
             if (!statusRes.ok) throw new Error('数据加载失败');
             const statusData = await statusRes.json();
             
             const results = statusData.results || [];
-            const configList = statusData.config || [];   // [{ domain, name }]
+            const configList = statusData.config || [];
             const lastFullCheck = statusData.last_full_check;
             
             if (lastFullCheck) {
@@ -75,19 +88,16 @@
                 document.getElementById('lastUpdateLabel').innerHTML = `⏱️ 暂无检查记录`;
             }
             
-            // 建立 domain -> name 映射
             const nameMap = new Map();
             for (const item of configList) {
                 nameMap.set(item.domain, item.name);
             }
             
-            // 建立 domain -> 状态结果映射
             const resultMap = new Map();
             for (const res of results) {
                 resultMap.set(res.domain, res);
             }
             
-            // 按 configList 顺序渲染（保持配置顺序）
             const tbody = document.getElementById('tableBody');
             tbody.innerHTML = '';
             for (const item of configList) {
@@ -106,17 +116,14 @@
     function createRow(domain, name, info) {
         const tr = document.createElement('tr');
         
-        // 中文名称列
         const tdName = document.createElement('td');
         tdName.innerHTML = `<strong>${escapeHtml(name)}</strong>`;
         tr.appendChild(tdName);
         
-        // 子域列
         const tdDomain = document.createElement('td');
         tdDomain.textContent = domain;
         tr.appendChild(tdDomain);
         
-        // 状态列
         const tdStatus = document.createElement('td');
         if (info && info.ok === true) {
             tdStatus.innerHTML = `<span class="status-badge status-ok">✅ 正常</span>`;
@@ -127,7 +134,6 @@
         }
         tr.appendChild(tdStatus);
         
-        // 状态码列
         const tdCode = document.createElement('td');
         if (info && info.status_code) {
             tdCode.innerHTML = `<span class="status-code">${info.status_code}</span>`;
@@ -138,7 +144,6 @@
         }
         tr.appendChild(tdCode);
         
-        // 响应时间列
         const tdTime = document.createElement('td');
         if (info && info.response_time_ms) {
             tdTime.innerHTML = `<span class="response-time">${info.response_time_ms} ms</span>`;
@@ -147,7 +152,6 @@
         }
         tr.appendChild(tdTime);
         
-        // 最后检查时间列
         const tdCheck = document.createElement('td');
         if (info && info.checked_at) {
             const d = new Date(info.checked_at);
@@ -160,7 +164,6 @@
         return tr;
     }
     
-    // 简单的防XSS辅助函数
     function escapeHtml(str) {
         return str.replace(/[&<>]/g, function(m) {
             if (m === '&') return '&amp;';
