@@ -1,31 +1,31 @@
 {
-  "last_full_check": "2026-05-11T22:00:32.785013Z",
+  "last_full_check": "2026-05-11T22:08:47.398702Z",
   "results": [
     {
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 216,
-      "checked_at": "2026-05-11T22:00:32.726387Z",
+      "response_time_ms": 338,
+      "checked_at": "2026-05-11T22:08:47.080031Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 429,
       "ok": false,
-      "response_time_ms": 59,
-      "checked_at": "2026-05-11T22:00:32.784966Z",
+      "response_time_ms": 319,
+      "checked_at": "2026-05-11T22:08:47.398645Z",
       "error": "HTTP Error 429: Too Many Requests"
     }
   ],
   "config": [
     {
       "domain": "classin.xn--bgtt50a8xt.top",
-      "name": "\u4e3b\u7ad9"
+      "name": "Cottie\u4e3b\u7ad9"
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
-      "name": "API \u7f51\u5173"
+      "name": "CottieAPI\u7f51\u5173"
     }
   ]
 }
