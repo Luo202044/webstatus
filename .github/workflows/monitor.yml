@@ -1,9 +1,6 @@
 name: Monitor Subdomain Status
 
 on:
-  schedule:
-    # 每小时执行一次 (UTC 时间整点，北京时间 +8)
-    - cron: '0 * * * *'
   workflow_dispatch:         # 允许手动触发
 
 jobs:
