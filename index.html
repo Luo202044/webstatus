@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>子域健康状态看板</title>
+    <title>服务健康状态看板</title>
     <style>
         * { box-sizing: border-box; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; }
         body { background: #f1f5f9; margin: 0; padding: 2rem 1rem; }
@@ -31,8 +31,8 @@
 <body>
 <div class="container">
     <div class="header">
-        <h1>🌐 子域健康监控</h1>
-        <div class="sub">同一个域名 · 不同子域 · 实时状态</div>
+        <h1>🌐 服务健康监控</h1>
+        <div class="sub">每小时刷新状态</div>
         <div class="last-update" id="lastUpdateLabel">加载中...</div>
         <div>
             <button class="refresh-cache-btn" id="forceRefreshBtn">🔄 强制刷新缓存</button>
@@ -44,7 +44,7 @@
             <thead>
                 <tr>
                     <th>服务名</th>
-                    <th>子域</th>
+                    <th>地址</th>
                     <th>状态</th>
                     <th>HTTP 状态码</th>
                     <th>响应时间</th>
@@ -57,7 +57,7 @@
         </table>
     </div>
     <div class="footer">
-        数据由 GitHub Actions 每小时探测一次 | 状态码 2xx/3xx 视为正常
+        棉尾舟 | 2026
     </div>
 </div>
 
