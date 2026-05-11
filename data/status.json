@@ -1,20 +1,20 @@
 {
-  "last_full_check": "2026-05-11T21:00:30.423801Z",
+  "last_full_check": "2026-05-11T22:00:32.785013Z",
   "results": [
     {
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 261,
-      "checked_at": "2026-05-11T21:00:30.214694Z",
+      "response_time_ms": 216,
+      "checked_at": "2026-05-11T22:00:32.726387Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 429,
       "ok": false,
-      "response_time_ms": 209,
-      "checked_at": "2026-05-11T21:00:30.423750Z",
+      "response_time_ms": 59,
+      "checked_at": "2026-05-11T22:00:32.784966Z",
       "error": "HTTP Error 429: Too Many Requests"
     }
   ],
