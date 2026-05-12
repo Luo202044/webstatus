@@ -1,184 +1,234 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>服务健康状态看板</title>
+    <title>服务状态</title>
     <style>
-        * { box-sizing: border-box; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; }
-        body { background: #f1f5f9; margin: 0; padding: 2rem 1rem; }
-        .container { max-width: 1200px; margin: 0 auto; }
-        .header { text-align: center; margin-bottom: 2rem; }
-        h1 { color: #0f172a; font-weight: 600; font-size: 1.8rem; margin-bottom: 0.25rem; }
-        .sub { color: #334155; font-size: 0.9rem; }
-        .last-update { background: white; display: inline-block; margin-top: 0.5rem; padding: 0.3rem 0.8rem; border-radius: 40px; font-size: 0.8rem; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
-        .refresh-cache-btn { background: #0f172a; border: none; color: white; padding: 0.5rem 1rem; border-radius: 2rem; font-weight: 500; cursor: pointer; transition: 0.2s; margin-top: 0.8rem; font-size: 0.85rem; }
-        .refresh-cache-btn:hover { background: #1e293b; }
-        .card { background: white; border-radius: 1rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); overflow-x: auto; }
-        table { width: 100%; border-collapse: collapse; min-width: 600px; }
-        th { text-align: left; padding: 1rem 1rem; background: #f8fafc; font-weight: 600; color: #1e293b; border-bottom: 1px solid #e2e8f0; }
-        td { padding: 1rem 1rem; border-bottom: 1px solid #e2e8f0; vertical-align: middle; }
-        .status-badge { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.2rem 0.8rem; border-radius: 9999px; font-size: 0.8rem; font-weight: 500; }
-        .status-ok { background: #dcfce7; color: #166534; }
-        .status-bad { background: #fee2e2; color: #991b1b; }
-        .status-code { font-family: monospace; font-weight: 600; }
-        .response-time { font-family: monospace; color: #475569; }
-        .footer { text-align: center; margin-top: 2rem; font-size: 0.75rem; color: #475569; }
-        @media (max-width: 640px) { th, td { padding: 0.75rem; } .status-badge { font-size: 0.7rem; } }
-        .loader { text-align: center; padding: 2rem; color: #475569; }
+        :root {
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --sub: #64748b;
+            --border: #e2e8f0;
+            --shadow: 0 1px 3px rgba(0,0,0,0.04);
+            --online: #10b981;
+            --redirect: #f59e0b;
+            --overload: #ef4444;
+            --offline: #ef4444;
+            --unknown: #94a3b8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #f8fafc;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 2rem 1rem;
+            color: var(--text);
+        }
+
+        .container {
+            max-width: 720px;
+            width: 100%;
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #0f172a;
+        }
+
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 1rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 0.75rem;
+            padding: 1rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--unknown);
+            flex-shrink: 0;
+        }
+
+        .dot.online {
+            background: var(--online);
+        }
+
+        .dot.redirect {
+            background: var(--redirect);
+        }
+
+        .dot.overload {
+            background: var(--overload);
+        }
+
+        .dot.offline {
+            background: var(--offline);
+        }
+
+        .name {
+            font-weight: 500;
+            word-break: break-word;
+        }
+
+        .status-text {
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .status-text.normal {
+            color: var(--online);
+        }
+
+        .status-text.warning {
+            color: var(--redirect);
+        }
+
+        .status-text.error {
+            color: var(--offline);
+        }
+
+        .status-text.unknown {
+            color: var(--unknown);
+        }
+
+        .time {
+            font-size: 0.75rem;
+            color: var(--sub);
+            margin-top: auto;
+        }
+
+        .footer {
+            margin-top: 2rem;
+            font-size: 0.75rem;
+            color: #94a3b8;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
 <div class="container">
-    <div class="header">
-        <h1>🌐 服务健康监控</h1>
-        <div class="sub">每小时刷新状态</div>
-        <div class="last-update" id="lastUpdateLabel">加载中...</div>
-        <div>
-            <button class="refresh-cache-btn" id="forceRefreshBtn">🔄 强制刷新缓存</button>
+    <h1>🔍 服务状态看板</h1>
+    <div class="status-grid" id="statusGrid">
+        <div class="card">
+            <div class="card-header"><span class="dot"></span><span class="name">加载中…</span></div>
+            <div class="status-text unknown">—</div>
+            <div class="time">检查时间：—</div>
         </div>
     </div>
-
-    <div class="card">
-        <table id="statusTable">
-            <thead>
-                <tr>
-                    <th>服务名</th>
-                    <th>地址</th>
-                    <th>状态</th>
-                    <th>HTTP 状态码</th>
-                    <th>响应时间</th>
-                    <th>最后检查时间</th>
-                </tr>
-            </thead>
-            <tbody id="tableBody">
-                <tr><td colspan="6" class="loader">⏳ 加载监控数据中...</td></tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="footer">
-        棉尾舟 | 2026
-    </div>
+    <div class="footer">数据每10分钟自动更新 · GitHub Actions</div>
 </div>
 
 <script>
-    // 强制刷新整个页面（绕过缓存）
-    document.getElementById('forceRefreshBtn').addEventListener('click', function() {
-        location.reload(true);  // true 表示强制从服务器重新加载
-    });
-
-    async function fetchData() {
+    (async function loadStatus() {
         try {
-            // 为了避免自动刷新时也使用缓存，可以在请求时添加时间戳参数（但 data/status.json 是静态文件，浏览器可能缓存）
-            // 更好的方式：在 fetch 时添加 cache: 'no-cache' 或时间戳
-            const statusRes = await fetch('./data/status.json?' + Date.now(), {
-                cache: 'no-cache'
-            });
-            if (!statusRes.ok) throw new Error('数据加载失败');
-            const statusData = await statusRes.json();
-            
-            const results = statusData.results || [];
-            const configList = statusData.config || [];
-            const lastFullCheck = statusData.last_full_check;
-            
-            if (lastFullCheck) {
-                const date = new Date(lastFullCheck);
-                document.getElementById('lastUpdateLabel').innerHTML = `📅 最后全局检查：${date.toLocaleString()}`;
-            } else {
-                document.getElementById('lastUpdateLabel').innerHTML = `⏱️ 暂无检查记录`;
-            }
-            
-            const nameMap = new Map();
-            for (const item of configList) {
-                nameMap.set(item.domain, item.name);
-            }
-            
-            const resultMap = new Map();
-            for (const res of results) {
-                resultMap.set(res.domain, res);
-            }
-            
-            const tbody = document.getElementById('tableBody');
-            tbody.innerHTML = '';
-            for (const item of configList) {
-                const domain = item.domain;
-                const name = item.name;
-                const info = resultMap.get(domain);
-                tbody.appendChild(createRow(domain, name, info));
-            }
-        } catch (err) {
-            console.error(err);
-            document.getElementById('tableBody').innerHTML = `<tr><td colspan="6" class="loader">⚠️ 无法获取状态数据，请确认 data/status.json 是否存在。</td></tr>`;
-            document.getElementById('lastUpdateLabel').innerHTML = '❌ 数据加载失败';
+            const res = await fetch('data/status.json');
+            if (!res.ok) throw new Error('无法获取数据');
+            const services = await res.json();
+            renderCards(services);
+        } catch (e) {
+            document.getElementById('statusGrid').innerHTML =
+                '<p style="color:red;">状态数据加载失败，请稍后刷新。</p>';
         }
+    })();
+
+    function getStatusInfo(code) {
+        // 未获取到状态码（可能网络错误）
+        if (code === null || code === undefined) {
+            return {
+                dotClass: '',
+                statusText: '未知',
+                textClass: 'unknown'
+            };
+        }
+
+        const codeNum = Number(code);
+        if (codeNum >= 200 && codeNum < 300) {
+            return {
+                dotClass: 'online',
+                statusText: '正常',
+                textClass: 'normal'
+            };
+        }
+        if (codeNum >= 300 && codeNum < 400) {
+            return {
+                dotClass: 'redirect',
+                statusText: '重定向(改道)',
+                textClass: 'warning'
+            };
+        }
+        if (codeNum === 429) {
+            return {
+                dotClass: 'overload',
+                statusText: '超载',
+                textClass: 'error'
+            };
+        }
+        // 其他 4xx/5xx 或未知错误
+        return {
+            dotClass: 'offline',
+            statusText: `错误 ${codeNum}`,
+            textClass: 'error'
+        };
     }
 
-    function createRow(domain, name, info) {
-        const tr = document.createElement('tr');
-        
-        const tdName = document.createElement('td');
-        tdName.innerHTML = `<strong>${escapeHtml(name)}</strong>`;
-        tr.appendChild(tdName);
-        
-        const tdDomain = document.createElement('td');
-        tdDomain.textContent = domain;
-        tr.appendChild(tdDomain);
-        
-        const tdStatus = document.createElement('td');
-        if (info && info.ok === true) {
-            tdStatus.innerHTML = `<span class="status-badge status-ok">✅ 正常</span>`;
-        } else if (info && info.ok === false) {
-            tdStatus.innerHTML = `<span class="status-badge status-bad">❌ 异常</span>`;
-        } else {
-            tdStatus.innerHTML = `<span class="status-badge status-bad">⏳ 无数据</span>`;
+    function renderCards(services) {
+        const grid = document.getElementById('statusGrid');
+        if (!services || !services.length) {
+            grid.innerHTML = '<p>暂无监测数据。</p>';
+            return;
         }
-        tr.appendChild(tdStatus);
-        
-        const tdCode = document.createElement('td');
-        if (info && info.status_code) {
-            tdCode.innerHTML = `<span class="status-code">${info.status_code}</span>`;
-        } else if (info && info.status_code === null) {
-            tdCode.innerHTML = `<span class="status-code">超时/无响应</span>`;
-        } else {
-            tdCode.textContent = '—';
-        }
-        tr.appendChild(tdCode);
-        
-        const tdTime = document.createElement('td');
-        if (info && info.response_time_ms) {
-            tdTime.innerHTML = `<span class="response-time">${info.response_time_ms} ms</span>`;
-        } else {
-            tdTime.textContent = '—';
-        }
-        tr.appendChild(tdTime);
-        
-        const tdCheck = document.createElement('td');
-        if (info && info.checked_at) {
-            const d = new Date(info.checked_at);
-            tdCheck.textContent = d.toLocaleString();
-        } else {
-            tdCheck.textContent = '—';
-        }
-        tr.appendChild(tdCheck);
-        
-        return tr;
-    }
-    
-    function escapeHtml(str) {
-        return str.replace(/[&<>]/g, function(m) {
-            if (m === '&') return '&amp;';
-            if (m === '<') return '&lt;';
-            if (m === '>') return '&gt;';
-            return m;
-        });
+
+        grid.innerHTML = services.map(s => {
+            const info = getStatusInfo(s.status);
+            const timeStr = s.timestamp
+                ? new Date(s.timestamp).toLocaleString('zh-CN', { hour12: false })
+                : '未知';
+
+            return `
+                <div class="card">
+                    <div class="card-header">
+                        <span class="dot ${info.dotClass}"></span>
+                        <span class="name">${escapeHtml(s.name)}</span>
+                    </div>
+                    <div class="status-text ${info.textClass}">${escapeHtml(info.statusText)}</div>
+                    <div class="time">检查时间：${escapeHtml(timeStr)}</div>
+                </div>
+            `;
+        }).join('');
     }
 
-    let autoRefreshInterval;
-    function startAutoRefresh() {
-        if (autoRefreshInterval) clearInterval(autoRefreshInterval);
-        autoRefreshInterval = setInterval(() => { fetchData(); }, 60000);
+    function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
     }
-    fetchData().then(() => startAutoRefresh());
 </script>
 </body>
 </html>
