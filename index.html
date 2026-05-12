@@ -149,7 +149,7 @@
             <div class="time">检查时间：—</div>
         </div>
     </div>
-    <div class="footer">数据每10分钟自动更新 · GitHub Actions</div>
+    <div class="footer">数据每小时自动更新 · 2026 棉尾舟</div>
 </div>
 
 <script>
@@ -209,7 +209,7 @@
             // 响应时间，如果有 response_time_ms 字段则显示，否则显示占用位
             let timeDisplay = '— ms';
             if (r.response_time_ms != null && !isNaN(r.response_time_ms)) {
-                timeDisplay = `${Math.round(r.response_time_ms)} ms`;
+                timeDisplay = `响应时间：${Math.round(r.response_time_ms)} ms`;
             }
 
             const checkedTime = r.checked_at
