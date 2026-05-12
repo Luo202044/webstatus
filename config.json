@@ -1,6 +1,8 @@
 {
   "domains": [
     { "domain": "classin.xn--bgtt50a8xt.top", "name": "Cottie主站" },
-    { "domain": "api.xn--bgtt50a8xt.top", "name": "CottieAPI网关" }
+    { "domain": "api.xn--bgtt50a8xt.top", "name": "CottieAPI网关" },
+    { "domain": "www.idcjk.com", "name": "[外部]IDC 风险以及信息查询系统" },
+    { "domain": "sadidc.com", "name": "[外部]伤心的云" },
   ]
 }
