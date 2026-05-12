@@ -1,36 +1,36 @@
 {
-  "last_full_check": "2026-05-12T22:18:45.193817Z",
+  "last_full_check": "2026-05-12T22:32:38.721752Z",
   "results": [
     {
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 111,
-      "checked_at": "2026-05-12T22:18:41.977750Z",
+      "response_time_ms": 128,
+      "checked_at": "2026-05-12T22:32:36.419541Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 797,
-      "checked_at": "2026-05-12T22:18:42.775258Z",
+      "response_time_ms": 843,
+      "checked_at": "2026-05-12T22:32:37.262342Z",
+      "error": null
+    },
+    {
+      "domain": "cla.66ghz.com",
+      "status_code": 200,
+      "ok": true,
+      "response_time_ms": 450,
+      "checked_at": "2026-05-12T22:32:37.712589Z",
       "error": null
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 957,
-      "checked_at": "2026-05-12T22:18:43.732157Z",
-      "error": null
-    },
-    {
-      "domain": "sadidc.com",
-      "status_code": 200,
-      "ok": true,
-      "response_time_ms": 1462,
-      "checked_at": "2026-05-12T22:18:45.193752Z",
+      "response_time_ms": 1009,
+      "checked_at": "2026-05-12T22:32:38.721713Z",
       "error": null
     }
   ],
@@ -44,12 +44,12 @@
       "name": "CottieAPI\u7f51\u5173"
     },
     {
-      "domain": "www.idcjk.com",
-      "name": "[\u5916\u90e8]IDC \u98ce\u9669\u4ee5\u53ca\u4fe1\u606f\u67e5\u8be2\u7cfb\u7edf"
+      "domain": "cla.66ghz.com",
+      "name": "bird\u5c0f\u7f51\u7ad91"
     },
     {
-      "domain": "sadidc.com",
-      "name": "[\u5916\u90e8]\u4f24\u5fc3\u7684\u4e91"
+      "domain": "www.idcjk.com",
+      "name": "[\u5916\u90e8]IDC \u98ce\u9669\u4ee5\u53ca\u4fe1\u606f\u67e5\u8be2\u7cfb\u7edf"
     }
   ]
 }
