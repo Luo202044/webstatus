@@ -1,20 +1,20 @@
 {
-  "last_full_check": "2026-05-12T15:00:45.484734Z",
+  "last_full_check": "2026-05-12T16:00:36.373134Z",
   "results": [
     {
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 254,
-      "checked_at": "2026-05-12T15:00:44.706339Z",
+      "response_time_ms": 124,
+      "checked_at": "2026-05-12T16:00:35.516078Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 778,
-      "checked_at": "2026-05-12T15:00:45.484673Z",
+      "response_time_ms": 857,
+      "checked_at": "2026-05-12T16:00:36.373067Z",
       "error": null
     }
   ],
