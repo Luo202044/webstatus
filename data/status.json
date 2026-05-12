@@ -1,36 +1,36 @@
 {
-  "last_full_check": "2026-05-12T22:08:33.260152Z",
+  "last_full_check": "2026-05-12T22:18:45.193817Z",
   "results": [
     {
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 442,
-      "checked_at": "2026-05-12T22:08:30.204910Z",
+      "response_time_ms": 111,
+      "checked_at": "2026-05-12T22:18:41.977750Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 638,
-      "checked_at": "2026-05-12T22:08:30.842611Z",
+      "response_time_ms": 797,
+      "checked_at": "2026-05-12T22:18:42.775258Z",
       "error": null
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 1017,
-      "checked_at": "2026-05-12T22:08:31.859550Z",
+      "response_time_ms": 957,
+      "checked_at": "2026-05-12T22:18:43.732157Z",
       "error": null
     },
     {
       "domain": "sadidc.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 1401,
-      "checked_at": "2026-05-12T22:08:33.260089Z",
+      "response_time_ms": 1462,
+      "checked_at": "2026-05-12T22:18:45.193752Z",
       "error": null
     }
   ],
