@@ -1,20 +1,36 @@
 {
-  "last_full_check": "2026-05-12T22:00:30.824416Z",
+  "last_full_check": "2026-05-12T22:08:33.260152Z",
   "results": [
     {
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 121,
-      "checked_at": "2026-05-12T22:00:30.032822Z",
+      "response_time_ms": 442,
+      "checked_at": "2026-05-12T22:08:30.204910Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 792,
-      "checked_at": "2026-05-12T22:00:30.824350Z",
+      "response_time_ms": 638,
+      "checked_at": "2026-05-12T22:08:30.842611Z",
+      "error": null
+    },
+    {
+      "domain": "www.idcjk.com",
+      "status_code": 200,
+      "ok": true,
+      "response_time_ms": 1017,
+      "checked_at": "2026-05-12T22:08:31.859550Z",
+      "error": null
+    },
+    {
+      "domain": "sadidc.com",
+      "status_code": 200,
+      "ok": true,
+      "response_time_ms": 1401,
+      "checked_at": "2026-05-12T22:08:33.260089Z",
       "error": null
     }
   ],
@@ -26,6 +42,14 @@
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "name": "CottieAPI\u7f51\u5173"
+    },
+    {
+      "domain": "www.idcjk.com",
+      "name": "[\u5916\u90e8]IDC \u98ce\u9669\u4ee5\u53ca\u4fe1\u606f\u67e5\u8be2\u7cfb\u7edf"
+    },
+    {
+      "domain": "sadidc.com",
+      "name": "[\u5916\u90e8]\u4f24\u5fc3\u7684\u4e91"
     }
   ]
 }
