@@ -2,8 +2,9 @@
   "domains": [
     { "domain": "classin.xn--bgtt50a8xt.top", "name": "Cottie主站" },
     { "domain": "api.xn--bgtt50a8xt.top", "name": "CottieAPI网关" },
+    { "domain": "blackblue.xn--bgtt50a8xt.top", "name": "黑洞节点" },
     { "domain": "cla.66ghz.com", "name": "[bird]小网站1" },
-    { "domain": "cla.66ghz.com", "name": "[bird]小网站2（备用)" },
+    { "domain": "c0.ct.ws", "name": "[bird]小网站2（备用)" },
     { "domain": "www.idcjk.com", "name": "[外部]IDC 风险以及信息查询系统" }
     
   ]
