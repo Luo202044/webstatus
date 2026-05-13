@@ -1,44 +1,52 @@
 {
-  "last_full_check": "2026-05-13T22:00:28.444691Z",
+  "last_full_check": "2026-05-13T23:00:34.325375Z",
   "results": [
     {
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 158,
-      "checked_at": "2026-05-13T22:00:25.225454Z",
+      "response_time_ms": 208,
+      "checked_at": "2026-05-13T23:00:30.695885Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 1054,
-      "checked_at": "2026-05-13T22:00:26.279249Z",
+      "response_time_ms": 1069,
+      "checked_at": "2026-05-13T23:00:31.764673Z",
+      "error": null
+    },
+    {
+      "domain": "blackblue.xn--bgtt50a8xt.top",
+      "status_code": 200,
+      "ok": true,
+      "response_time_ms": 382,
+      "checked_at": "2026-05-13T23:00:32.146739Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 598,
-      "checked_at": "2026-05-13T22:00:26.877756Z",
+      "response_time_ms": 528,
+      "checked_at": "2026-05-13T23:00:32.674556Z",
       "error": null
     },
     {
-      "domain": "cla.66ghz.com",
+      "domain": "c0.ct.ws",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 601,
-      "checked_at": "2026-05-13T22:00:27.478657Z",
+      "response_time_ms": 725,
+      "checked_at": "2026-05-13T23:00:33.399201Z",
       "error": null
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 966,
-      "checked_at": "2026-05-13T22:00:28.444627Z",
+      "response_time_ms": 926,
+      "checked_at": "2026-05-13T23:00:34.325336Z",
       "error": null
     }
   ],
@@ -52,11 +60,15 @@
       "name": "CottieAPI\u7f51\u5173"
     },
     {
+      "domain": "blackblue.xn--bgtt50a8xt.top",
+      "name": "\u9ed1\u6d1e\u8282\u70b9"
+    },
+    {
       "domain": "cla.66ghz.com",
       "name": "[bird]\u5c0f\u7f51\u7ad91"
     },
     {
-      "domain": "cla.66ghz.com",
+      "domain": "c0.ct.ws",
       "name": "[bird]\u5c0f\u7f51\u7ad92\uff08\u5907\u7528)"
     },
     {
