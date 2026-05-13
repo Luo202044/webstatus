@@ -1,36 +1,36 @@
 {
-  "last_full_check": "2026-05-13T04:00:28.635362Z",
+  "last_full_check": "2026-05-13T05:00:28.079854Z",
   "results": [
     {
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 247,
-      "checked_at": "2026-05-13T04:00:24.762373Z",
+      "response_time_ms": 178,
+      "checked_at": "2026-05-13T05:00:25.241331Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 1873,
-      "checked_at": "2026-05-13T04:00:26.635649Z",
+      "response_time_ms": 878,
+      "checked_at": "2026-05-13T05:00:26.119050Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 604,
-      "checked_at": "2026-05-13T04:00:27.239190Z",
+      "response_time_ms": 524,
+      "checked_at": "2026-05-13T05:00:26.643214Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 394,
-      "checked_at": "2026-05-13T04:00:27.633131Z",
+      "response_time_ms": 435,
+      "checked_at": "2026-05-13T05:00:27.078181Z",
       "error": null
     },
     {
@@ -38,7 +38,7 @@
       "status_code": 200,
       "ok": true,
       "response_time_ms": 1002,
-      "checked_at": "2026-05-13T04:00:28.635280Z",
+      "checked_at": "2026-05-13T05:00:28.079790Z",
       "error": null
     }
   ],
