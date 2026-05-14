@@ -1,19 +1,79 @@
 {
   "config": [
     {
-      "domain": "domains",
-      "name": "domains"
+      "domain": "classin.xn--bgtt50a8xt.top",
+      "name": "Cottie主站"
+    },
+    {
+      "domain": "api.xn--bgtt50a8xt.top",
+      "name": "CottieAPI网关"
+    },
+    {
+      "domain": "blackblue.xn--bgtt50a8xt.top",
+      "name": "黑洞节点"
+    },
+    {
+      "domain": "cla.66ghz.com",
+      "name": "[bird]小网站1"
+    },
+    {
+      "domain": "c0.ct.ws",
+      "name": "[bird]小网站2（备用)"
+    },
+    {
+      "domain": "www.idcjk.com",
+      "name": "[外部]IDC 风险以及信息查询系统"
     }
   ],
   "results": [
     {
-      "domain": "domains",
+      "domain": "classin.xn--bgtt50a8xt.top",
+      "status_code": 200,
+      "ok": true,
+      "response_time_ms": 526,
+      "checked_at": "2026-05-14T13:55:59.006387Z",
+      "error": null
+    },
+    {
+      "domain": "api.xn--bgtt50a8xt.top",
       "status_code": null,
       "ok": false,
-      "response_time_ms": 30,
-      "checked_at": "2026-05-14T13:15:03.920736Z",
-      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+      "response_time_ms": 85,
+      "checked_at": "2026-05-14T13:55:59.091673Z",
+      "error": "NoRedirectHandler.redirect_request() missing 1 required positional argument: 'newurl'"
+    },
+    {
+      "domain": "blackblue.xn--bgtt50a8xt.top",
+      "status_code": 200,
+      "ok": true,
+      "response_time_ms": 232,
+      "checked_at": "2026-05-14T13:55:59.323206Z",
+      "error": null
+    },
+    {
+      "domain": "cla.66ghz.com",
+      "status_code": 200,
+      "ok": true,
+      "response_time_ms": 674,
+      "checked_at": "2026-05-14T13:55:59.997524Z",
+      "error": null
+    },
+    {
+      "domain": "c0.ct.ws",
+      "status_code": 200,
+      "ok": true,
+      "response_time_ms": 890,
+      "checked_at": "2026-05-14T13:56:00.887230Z",
+      "error": null
+    },
+    {
+      "domain": "www.idcjk.com",
+      "status_code": 200,
+      "ok": true,
+      "response_time_ms": 728,
+      "checked_at": "2026-05-14T13:56:01.615475Z",
+      "error": null
     }
   ],
-  "updated_at": "2026-05-14T13:15:03.920750Z"
+  "updated_at": "2026-05-14T13:56:01.615491Z"
 }
