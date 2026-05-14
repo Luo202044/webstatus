@@ -1,52 +1,52 @@
 {
-  "last_full_check": "2026-05-14T00:00:28.472123Z",
+  "last_full_check": "2026-05-14T01:00:32.991028Z",
   "results": [
     {
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 154,
-      "checked_at": "2026-05-14T00:00:25.113219Z",
+      "response_time_ms": 156,
+      "checked_at": "2026-05-14T01:00:29.966784Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 805,
-      "checked_at": "2026-05-14T00:00:25.918260Z",
+      "response_time_ms": 872,
+      "checked_at": "2026-05-14T01:00:30.839144Z",
       "error": null
     },
     {
       "domain": "blackblue.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 180,
-      "checked_at": "2026-05-14T00:00:26.098333Z",
+      "response_time_ms": 171,
+      "checked_at": "2026-05-14T01:00:31.010622Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 800,
-      "checked_at": "2026-05-14T00:00:26.898105Z",
+      "response_time_ms": 435,
+      "checked_at": "2026-05-14T01:00:31.445558Z",
       "error": null
     },
     {
       "domain": "c0.ct.ws",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 641,
-      "checked_at": "2026-05-14T00:00:27.539161Z",
+      "response_time_ms": 534,
+      "checked_at": "2026-05-14T01:00:31.979800Z",
       "error": null
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 933,
-      "checked_at": "2026-05-14T00:00:28.472076Z",
+      "response_time_ms": 1011,
+      "checked_at": "2026-05-14T01:00:32.990962Z",
       "error": null
     }
   ],
