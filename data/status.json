@@ -1,79 +1,19 @@
 {
-  "last_full_check": "2026-05-14T12:00:28.554431Z",
-  "results": [
-    {
-      "domain": "classin.xn--bgtt50a8xt.top",
-      "status_code": 200,
-      "ok": true,
-      "response_time_ms": 114,
-      "checked_at": "2026-05-14T12:00:26.085277Z",
-      "error": null
-    },
-    {
-      "domain": "api.xn--bgtt50a8xt.top",
-      "status_code": 200,
-      "ok": true,
-      "response_time_ms": 222,
-      "checked_at": "2026-05-14T12:00:26.307116Z",
-      "error": null
-    },
-    {
-      "domain": "blackblue.xn--bgtt50a8xt.top",
-      "status_code": 200,
-      "ok": true,
-      "response_time_ms": 66,
-      "checked_at": "2026-05-14T12:00:26.373600Z",
-      "error": null
-    },
-    {
-      "domain": "cla.66ghz.com",
-      "status_code": 200,
-      "ok": true,
-      "response_time_ms": 526,
-      "checked_at": "2026-05-14T12:00:26.899675Z",
-      "error": null
-    },
-    {
-      "domain": "c0.ct.ws",
-      "status_code": 200,
-      "ok": true,
-      "response_time_ms": 629,
-      "checked_at": "2026-05-14T12:00:27.528966Z",
-      "error": null
-    },
-    {
-      "domain": "www.idcjk.com",
-      "status_code": 200,
-      "ok": true,
-      "response_time_ms": 1025,
-      "checked_at": "2026-05-14T12:00:28.554361Z",
-      "error": null
-    }
-  ],
   "config": [
     {
-      "domain": "classin.xn--bgtt50a8xt.top",
-      "name": "Cottie\u4e3b\u7ad9"
-    },
-    {
-      "domain": "api.xn--bgtt50a8xt.top",
-      "name": "CottieAPI\u7f51\u5173"
-    },
-    {
-      "domain": "blackblue.xn--bgtt50a8xt.top",
-      "name": "\u9ed1\u6d1e\u8282\u70b9"
-    },
-    {
-      "domain": "cla.66ghz.com",
-      "name": "[bird]\u5c0f\u7f51\u7ad91"
-    },
-    {
-      "domain": "c0.ct.ws",
-      "name": "[bird]\u5c0f\u7f51\u7ad92\uff08\u5907\u7528)"
-    },
-    {
-      "domain": "www.idcjk.com",
-      "name": "[\u5916\u90e8]IDC \u98ce\u9669\u4ee5\u53ca\u4fe1\u606f\u67e5\u8be2\u7cfb\u7edf"
+      "domain": "domains",
+      "name": "domains"
     }
-  ]
+  ],
+  "results": [
+    {
+      "domain": "domains",
+      "status_code": null,
+      "ok": false,
+      "response_time_ms": 30,
+      "checked_at": "2026-05-14T13:15:03.920736Z",
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    }
+  ],
+  "updated_at": "2026-05-14T13:15:03.920750Z"
 }
