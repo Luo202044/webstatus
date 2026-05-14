@@ -62,16 +62,26 @@ def main():
     with open("config.json", "r", encoding="utf-8") as f:
         raw_config = json.load(f)
 
-    # 兼容两种 config 格式：
-    # 格式 A（字符串列表）: ["domain1", "domain2"]
-    # 格式 B（对象列表）: [{"domain": "domain1", "name": "name1"}]
+    # ───── 关键修正：兼容你的 config.json 格式 ─────
+    # 你的 config.json 是 {"domains": [...]} 结构
+    if isinstance(raw_config, dict) and "domains" in raw_config:
+        raw_list = raw_config["domains"]
+    elif isinstance(raw_config, list):
+        raw_list = raw_config   # 兼容旧的数组格式
+    else:
+        raise ValueError("config.json 格式错误：需要 {'domains': [...]} 或 [...] 数组")
+
+    # 统一转换为对象数组（确保每个条目都有 domain 和 name）
     config: List[Dict[str, str]] = []
-    for item in raw_config:
+    for item in raw_list:
         if isinstance(item, str):
-            # 字符串 → 默认名称用域名
             config.append({"domain": item, "name": item})
         elif isinstance(item, dict) and "domain" in item:
-            config.append(item)
+            # 确保 name 存在，不存在则用 domain 作为名称
+            config.append({
+                "domain": item["domain"],
+                "name": item.get("name", item["domain"])
+            })
         else:
             print(f"⚠️ 跳过无效配置项: {item}")
 
