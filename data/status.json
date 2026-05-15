@@ -30,50 +30,50 @@
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 157,
-      "checked_at": "2026-05-15T07:00:24.928975Z",
+      "response_time_ms": 105,
+      "checked_at": "2026-05-15T08:00:26.428108Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": null,
       "ok": false,
-      "response_time_ms": 310,
-      "checked_at": "2026-05-15T07:00:25.239209Z",
+      "response_time_ms": 66,
+      "checked_at": "2026-05-15T08:00:26.494541Z",
       "error": "NoRedirectHandler.redirect_request() missing 1 required positional argument: 'newurl'"
     },
     {
       "domain": "blackblue.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 142,
-      "checked_at": "2026-05-15T07:00:25.380875Z",
+      "response_time_ms": 99,
+      "checked_at": "2026-05-15T08:00:26.593298Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 609,
-      "checked_at": "2026-05-15T07:00:25.990136Z",
+      "response_time_ms": 453,
+      "checked_at": "2026-05-15T08:00:27.046014Z",
       "error": null
     },
     {
       "domain": "c0.ct.ws",
-      "status_code": 200,
-      "ok": true,
-      "response_time_ms": 520,
-      "checked_at": "2026-05-15T07:00:26.510078Z",
-      "error": null
+      "status_code": null,
+      "ok": false,
+      "response_time_ms": 1045,
+      "checked_at": "2026-05-15T08:00:28.090725Z",
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 931,
-      "checked_at": "2026-05-15T07:00:27.441546Z",
+      "response_time_ms": 959,
+      "checked_at": "2026-05-15T08:00:29.049257Z",
       "error": null
     }
   ],
-  "updated_at": "2026-05-15T07:00:27.441561Z"
+  "updated_at": "2026-05-15T08:00:29.049273Z"
 }
