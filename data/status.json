@@ -28,52 +28,52 @@
   "results": [
     {
       "domain": "classin.xn--bgtt50a8xt.top",
-      "status_code": null,
-      "ok": false,
-      "response_time_ms": 99,
-      "checked_at": "2026-05-16T02:56:41.164126Z",
-      "error": "NoRedirectHandler.redirect_request() missing 1 required positional argument: 'newurl'"
+      "status_code": 200,
+      "ok": true,
+      "response_time_ms": 364,
+      "checked_at": "2026-05-16T03:00:22.757493Z",
+      "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": null,
       "ok": false,
-      "response_time_ms": 70,
-      "checked_at": "2026-05-16T02:56:41.234029Z",
+      "response_time_ms": 295,
+      "checked_at": "2026-05-16T03:00:23.052458Z",
       "error": "NoRedirectHandler.redirect_request() missing 1 required positional argument: 'newurl'"
     },
     {
       "domain": "blackblue.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 338,
-      "checked_at": "2026-05-16T02:56:41.572441Z",
+      "response_time_ms": 109,
+      "checked_at": "2026-05-16T03:00:23.161365Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 743,
-      "checked_at": "2026-05-16T02:56:42.315485Z",
+      "response_time_ms": 489,
+      "checked_at": "2026-05-16T03:00:23.650171Z",
       "error": null
     },
     {
       "domain": "c0.ct.ws",
       "status_code": null,
       "ok": false,
-      "response_time_ms": 1386,
-      "checked_at": "2026-05-16T02:56:43.701299Z",
+      "response_time_ms": 1014,
+      "checked_at": "2026-05-16T03:00:24.664349Z",
       "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 929,
-      "checked_at": "2026-05-16T02:56:44.630167Z",
+      "response_time_ms": 545,
+      "checked_at": "2026-05-16T03:00:25.209439Z",
       "error": null
     }
   ],
-  "updated_at": "2026-05-16T02:56:44.630181Z"
+  "updated_at": "2026-05-16T03:00:25.209455Z"
 }
