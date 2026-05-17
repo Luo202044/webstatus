@@ -30,50 +30,50 @@
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 239,
-      "checked_at": "2026-05-17T05:00:21.676026Z",
+      "response_time_ms": 159,
+      "checked_at": "2026-05-17T06:00:22.336694Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": null,
       "ok": false,
-      "response_time_ms": 150,
-      "checked_at": "2026-05-17T05:00:21.825898Z",
+      "response_time_ms": 71,
+      "checked_at": "2026-05-17T06:00:22.407866Z",
       "error": "NoRedirectHandler.redirect_request() missing 1 required positional argument: 'newurl'"
     },
     {
       "domain": "blackblue.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 236,
-      "checked_at": "2026-05-17T05:00:22.061660Z",
+      "response_time_ms": 157,
+      "checked_at": "2026-05-17T06:00:22.564844Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 576,
-      "checked_at": "2026-05-17T05:00:22.637989Z",
+      "response_time_ms": 590,
+      "checked_at": "2026-05-17T06:00:23.155001Z",
       "error": null
     },
     {
       "domain": "c0.ct.ws",
       "status_code": null,
       "ok": false,
-      "response_time_ms": 573,
-      "checked_at": "2026-05-17T05:00:23.210778Z",
+      "response_time_ms": 779,
+      "checked_at": "2026-05-17T06:00:23.934193Z",
       "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 472,
-      "checked_at": "2026-05-17T05:00:23.683020Z",
+      "response_time_ms": 355,
+      "checked_at": "2026-05-17T06:00:24.289361Z",
       "error": null
     }
   ],
-  "updated_at": "2026-05-17T05:00:23.683035Z"
+  "updated_at": "2026-05-17T06:00:24.289380Z"
 }
