@@ -30,50 +30,50 @@
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 247,
-      "checked_at": "2026-05-16T23:00:21.814837Z",
+      "response_time_ms": 109,
+      "checked_at": "2026-05-17T00:00:23.542624Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
-      "status_code": null,
-      "ok": false,
-      "response_time_ms": 158,
-      "checked_at": "2026-05-16T23:00:21.973192Z",
-      "error": "NoRedirectHandler.redirect_request() missing 1 required positional argument: 'newurl'"
+      "status_code": 200,
+      "ok": true,
+      "response_time_ms": 865,
+      "checked_at": "2026-05-17T00:00:24.408078Z",
+      "error": null
     },
     {
       "domain": "blackblue.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 278,
-      "checked_at": "2026-05-16T23:00:22.251279Z",
+      "response_time_ms": 358,
+      "checked_at": "2026-05-17T00:00:24.766321Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 854,
-      "checked_at": "2026-05-16T23:00:23.105602Z",
+      "response_time_ms": 1002,
+      "checked_at": "2026-05-17T00:00:25.768022Z",
       "error": null
     },
     {
       "domain": "c0.ct.ws",
       "status_code": null,
       "ok": false,
-      "response_time_ms": 985,
-      "checked_at": "2026-05-16T23:00:24.090212Z",
+      "response_time_ms": 581,
+      "checked_at": "2026-05-17T00:00:26.349287Z",
       "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 896,
-      "checked_at": "2026-05-16T23:00:24.986059Z",
+      "response_time_ms": 1056,
+      "checked_at": "2026-05-17T00:00:27.405410Z",
       "error": null
     }
   ],
-  "updated_at": "2026-05-16T23:00:24.986082Z"
+  "updated_at": "2026-05-17T00:00:27.405428Z"
 }
