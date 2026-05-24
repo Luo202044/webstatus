@@ -17,8 +17,8 @@
       "name": "[bird]小网站1"
     },
     {
-      "domain": "c0.ct.ws",
-      "name": "[bird]小网站2（备用)"
+      "domain": "rooma.mydiscussion.net",
+      "name": "[bird]Classin千人群中转"
     },
     {
       "domain": "www.idcjk.com",
@@ -30,50 +30,50 @@
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 259,
-      "checked_at": "2026-05-24T03:00:27.275170Z",
+      "response_time_ms": 200,
+      "checked_at": "2026-05-24T03:35:50.558984Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 1312,
-      "checked_at": "2026-05-24T03:00:28.587364Z",
+      "response_time_ms": 1100,
+      "checked_at": "2026-05-24T03:35:51.658731Z",
       "error": null
     },
     {
       "domain": "blackblue.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 254,
-      "checked_at": "2026-05-24T03:00:28.840923Z",
+      "response_time_ms": 217,
+      "checked_at": "2026-05-24T03:35:51.876263Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 727,
-      "checked_at": "2026-05-24T03:00:29.567890Z",
+      "response_time_ms": 644,
+      "checked_at": "2026-05-24T03:35:52.520791Z",
       "error": null
     },
     {
-      "domain": "c0.ct.ws",
-      "status_code": null,
-      "ok": false,
-      "response_time_ms": 574,
-      "checked_at": "2026-05-24T03:00:30.141651Z",
-      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+      "domain": "rooma.mydiscussion.net",
+      "status_code": 200,
+      "ok": true,
+      "response_time_ms": 595,
+      "checked_at": "2026-05-24T03:35:53.115451Z",
+      "error": null
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 729,
-      "checked_at": "2026-05-24T03:00:30.870891Z",
+      "response_time_ms": 942,
+      "checked_at": "2026-05-24T03:35:54.057669Z",
       "error": null
     }
   ],
-  "updated_at": "2026-05-24T03:00:30.870905Z"
+  "updated_at": "2026-05-24T03:35:54.057698Z"
 }
