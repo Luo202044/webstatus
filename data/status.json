@@ -30,50 +30,50 @@
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 132,
-      "checked_at": "2026-05-28T09:00:28.668037Z",
+      "response_time_ms": 371,
+      "checked_at": "2026-05-28T10:00:28.310542Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 916,
-      "checked_at": "2026-05-28T09:00:29.583914Z",
+      "response_time_ms": 1112,
+      "checked_at": "2026-05-28T10:00:29.422414Z",
       "error": null
     },
     {
       "domain": "blackblue.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 247,
-      "checked_at": "2026-05-28T09:00:29.831335Z",
+      "response_time_ms": 444,
+      "checked_at": "2026-05-28T10:00:29.866926Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
-      "status_code": 200,
-      "ok": true,
-      "response_time_ms": 643,
-      "checked_at": "2026-05-28T09:00:30.474152Z",
-      "error": null
+      "status_code": null,
+      "ok": false,
+      "response_time_ms": 15042,
+      "checked_at": "2026-05-28T10:00:44.908582Z",
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "domain": "rooma.mydiscussion.net",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 726,
-      "checked_at": "2026-05-28T09:00:31.200012Z",
+      "response_time_ms": 5098,
+      "checked_at": "2026-05-28T10:00:50.006229Z",
       "error": null
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 941,
-      "checked_at": "2026-05-28T09:00:32.140980Z",
+      "response_time_ms": 754,
+      "checked_at": "2026-05-28T10:00:50.759967Z",
       "error": null
     }
   ],
-  "updated_at": "2026-05-28T09:00:32.141003Z"
+  "updated_at": "2026-05-28T10:00:50.759982Z"
 }
