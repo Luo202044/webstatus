@@ -30,50 +30,50 @@
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 184,
-      "checked_at": "2026-06-10T00:00:28.513876Z",
+      "response_time_ms": 6785,
+      "checked_at": "2026-06-10T01:00:34.599062Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 677,
-      "checked_at": "2026-06-10T00:00:29.190877Z",
+      "response_time_ms": 850,
+      "checked_at": "2026-06-10T01:00:35.449213Z",
       "error": null
     },
     {
       "domain": "blackblue.xn--bgtt50a8xt.top",
-      "status_code": 200,
-      "ok": true,
-      "response_time_ms": 154,
-      "checked_at": "2026-06-10T00:00:29.345153Z",
-      "error": null
+      "status_code": null,
+      "ok": false,
+      "response_time_ms": 15129,
+      "checked_at": "2026-06-10T01:00:50.578422Z",
+      "error": "The read operation timed out"
     },
     {
       "domain": "cla.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 1248,
-      "checked_at": "2026-06-10T00:00:30.593436Z",
+      "response_time_ms": 565,
+      "checked_at": "2026-06-10T01:00:51.143072Z",
       "error": null
     },
     {
       "domain": "rooma.mydiscussion.net",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 536,
-      "checked_at": "2026-06-10T00:00:31.129938Z",
+      "response_time_ms": 629,
+      "checked_at": "2026-06-10T01:00:51.772355Z",
       "error": null
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 180,
-      "checked_at": "2026-06-10T00:00:31.310304Z",
+      "response_time_ms": 98,
+      "checked_at": "2026-06-10T01:00:51.870365Z",
       "error": null
     }
   ],
-  "updated_at": "2026-06-10T00:00:31.310322Z"
+  "updated_at": "2026-06-10T01:00:51.870379Z"
 }
