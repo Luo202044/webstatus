@@ -30,50 +30,50 @@
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 330,
-      "checked_at": "2026-06-14T02:00:32.227369Z",
+      "response_time_ms": 389,
+      "checked_at": "2026-06-14T03:00:29.277848Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 925,
-      "checked_at": "2026-06-14T02:00:33.152169Z",
+      "response_time_ms": 971,
+      "checked_at": "2026-06-14T03:00:30.248648Z",
       "error": null
     },
     {
       "domain": "blackblue.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 167,
-      "checked_at": "2026-06-14T02:00:33.318876Z",
+      "response_time_ms": 359,
+      "checked_at": "2026-06-14T03:00:30.607390Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
-      "status_code": null,
-      "ok": false,
-      "response_time_ms": 15497,
-      "checked_at": "2026-06-14T02:00:48.815640Z",
-      "error": "<urlopen error timed out>"
+      "status_code": 200,
+      "ok": true,
+      "response_time_ms": 755,
+      "checked_at": "2026-06-14T03:00:31.362748Z",
+      "error": null
     },
     {
       "domain": "rooma.mydiscussion.net",
-      "status_code": null,
-      "ok": false,
-      "response_time_ms": 15370,
-      "checked_at": "2026-06-14T02:01:04.186104Z",
-      "error": "<urlopen error timed out>"
+      "status_code": 200,
+      "ok": true,
+      "response_time_ms": 779,
+      "checked_at": "2026-06-14T03:00:32.141787Z",
+      "error": null
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 146,
-      "checked_at": "2026-06-14T02:01:04.332230Z",
+      "response_time_ms": 79,
+      "checked_at": "2026-06-14T03:00:32.220783Z",
       "error": null
     }
   ],
-  "updated_at": "2026-06-14T02:01:04.332246Z"
+  "updated_at": "2026-06-14T03:00:32.220794Z"
 }
