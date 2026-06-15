@@ -30,50 +30,50 @@
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 423,
-      "checked_at": "2026-06-15T15:00:41.574193Z",
+      "response_time_ms": 635,
+      "checked_at": "2026-06-15T16:00:33.843306Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 1116,
-      "checked_at": "2026-06-15T15:00:42.689957Z",
+      "response_time_ms": 1519,
+      "checked_at": "2026-06-15T16:00:35.362156Z",
       "error": null
     },
     {
       "domain": "blackblue.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 314,
-      "checked_at": "2026-06-15T15:00:43.004200Z",
+      "response_time_ms": 410,
+      "checked_at": "2026-06-15T16:00:35.772528Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
-      "status_code": null,
-      "ok": false,
-      "response_time_ms": 15811,
-      "checked_at": "2026-06-15T15:00:58.815617Z",
-      "error": "<urlopen error timed out>"
+      "status_code": 200,
+      "ok": true,
+      "response_time_ms": 439,
+      "checked_at": "2026-06-15T16:00:36.211269Z",
+      "error": null
     },
     {
       "domain": "rooma.mydiscussion.net",
-      "status_code": null,
-      "ok": false,
-      "response_time_ms": 15360,
-      "checked_at": "2026-06-15T15:01:14.175955Z",
-      "error": "<urlopen error timed out>"
+      "status_code": 200,
+      "ok": true,
+      "response_time_ms": 466,
+      "checked_at": "2026-06-15T16:00:36.677572Z",
+      "error": null
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 176,
-      "checked_at": "2026-06-15T15:01:14.352069Z",
+      "response_time_ms": 169,
+      "checked_at": "2026-06-15T16:00:36.846964Z",
       "error": null
     }
   ],
-  "updated_at": "2026-06-15T15:01:14.352085Z"
+  "updated_at": "2026-06-15T16:00:36.846983Z"
 }
