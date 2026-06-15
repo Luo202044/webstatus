@@ -30,50 +30,50 @@
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 256,
-      "checked_at": "2026-06-15T14:00:38.946861Z",
+      "response_time_ms": 423,
+      "checked_at": "2026-06-15T15:00:41.574193Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 1345,
-      "checked_at": "2026-06-15T14:00:40.292041Z",
+      "response_time_ms": 1116,
+      "checked_at": "2026-06-15T15:00:42.689957Z",
       "error": null
     },
     {
       "domain": "blackblue.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 182,
-      "checked_at": "2026-06-15T14:00:40.474498Z",
+      "response_time_ms": 314,
+      "checked_at": "2026-06-15T15:00:43.004200Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
-      "status_code": 200,
-      "ok": true,
-      "response_time_ms": 651,
-      "checked_at": "2026-06-15T14:00:41.125455Z",
-      "error": null
+      "status_code": null,
+      "ok": false,
+      "response_time_ms": 15811,
+      "checked_at": "2026-06-15T15:00:58.815617Z",
+      "error": "<urlopen error timed out>"
     },
     {
       "domain": "rooma.mydiscussion.net",
-      "status_code": 200,
-      "ok": true,
-      "response_time_ms": 657,
-      "checked_at": "2026-06-15T14:00:41.782012Z",
-      "error": null
+      "status_code": null,
+      "ok": false,
+      "response_time_ms": 15360,
+      "checked_at": "2026-06-15T15:01:14.175955Z",
+      "error": "<urlopen error timed out>"
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 127,
-      "checked_at": "2026-06-15T14:00:41.908692Z",
+      "response_time_ms": 176,
+      "checked_at": "2026-06-15T15:01:14.352069Z",
       "error": null
     }
   ],
-  "updated_at": "2026-06-15T14:00:41.908707Z"
+  "updated_at": "2026-06-15T15:01:14.352085Z"
 }
