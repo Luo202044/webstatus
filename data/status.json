@@ -30,50 +30,50 @@
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 451,
-      "checked_at": "2026-06-16T04:00:28.759180Z",
+      "response_time_ms": 255,
+      "checked_at": "2026-06-16T10:02:33.101954Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 1450,
-      "checked_at": "2026-06-16T04:00:30.208877Z",
+      "response_time_ms": 846,
+      "checked_at": "2026-06-16T10:02:33.947687Z",
       "error": null
     },
     {
       "domain": "blackblue.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 386,
-      "checked_at": "2026-06-16T04:00:30.595352Z",
+      "response_time_ms": 169,
+      "checked_at": "2026-06-16T10:02:34.117128Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
-      "status_code": null,
-      "ok": false,
-      "response_time_ms": 15394,
-      "checked_at": "2026-06-16T04:00:45.989791Z",
-      "error": "<urlopen error timed out>"
+      "status_code": 200,
+      "ok": true,
+      "response_time_ms": 721,
+      "checked_at": "2026-06-16T10:02:34.838429Z",
+      "error": null
     },
     {
       "domain": "rooma.mydiscussion.net",
-      "status_code": null,
-      "ok": false,
-      "response_time_ms": 15369,
-      "checked_at": "2026-06-16T04:01:01.358593Z",
-      "error": "<urlopen error timed out>"
+      "status_code": 200,
+      "ok": true,
+      "response_time_ms": 710,
+      "checked_at": "2026-06-16T10:02:35.548816Z",
+      "error": null
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 168,
-      "checked_at": "2026-06-16T04:01:01.526902Z",
+      "response_time_ms": 121,
+      "checked_at": "2026-06-16T10:02:35.670182Z",
       "error": null
     }
   ],
-  "updated_at": "2026-06-16T04:01:01.526917Z"
+  "updated_at": "2026-06-16T10:02:35.670190Z"
 }
