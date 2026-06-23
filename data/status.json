@@ -30,50 +30,50 @@
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 154,
-      "checked_at": "2026-06-23T09:00:32.044499Z",
+      "response_time_ms": 160,
+      "checked_at": "2026-06-23T10:00:30.860833Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 610,
-      "checked_at": "2026-06-23T09:00:32.654122Z",
+      "response_time_ms": 592,
+      "checked_at": "2026-06-23T10:00:31.453259Z",
       "error": null
     },
     {
       "domain": "blackblue.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 581,
-      "checked_at": "2026-06-23T09:00:33.234677Z",
+      "response_time_ms": 123,
+      "checked_at": "2026-06-23T10:00:31.576513Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 637,
-      "checked_at": "2026-06-23T09:00:33.871627Z",
+      "response_time_ms": 591,
+      "checked_at": "2026-06-23T10:00:32.167727Z",
       "error": null
     },
     {
       "domain": "rooma.mydiscussion.net",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 747,
-      "checked_at": "2026-06-23T09:00:34.618350Z",
+      "response_time_ms": 443,
+      "checked_at": "2026-06-23T10:00:32.610809Z",
       "error": null
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 106,
-      "checked_at": "2026-06-23T09:00:34.724337Z",
+      "response_time_ms": 108,
+      "checked_at": "2026-06-23T10:00:32.718599Z",
       "error": null
     }
   ],
-  "updated_at": "2026-06-23T09:00:34.724351Z"
+  "updated_at": "2026-06-23T10:00:32.718614Z"
 }
