@@ -30,50 +30,50 @@
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 225,
-      "checked_at": "2026-06-29T07:00:29.067223Z",
+      "response_time_ms": 131,
+      "checked_at": "2026-06-29T08:00:28.786591Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 603,
-      "checked_at": "2026-06-29T07:00:29.670603Z",
+      "response_time_ms": 695,
+      "checked_at": "2026-06-29T08:00:29.482091Z",
       "error": null
     },
     {
       "domain": "blackblue.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 281,
-      "checked_at": "2026-06-29T07:00:29.951990Z",
+      "response_time_ms": 118,
+      "checked_at": "2026-06-29T08:00:29.600183Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
-      "status_code": null,
-      "ok": false,
-      "response_time_ms": 279,
-      "checked_at": "2026-06-29T07:00:30.231144Z",
-      "error": "<urlopen error [Errno 111] Connection refused>"
+      "status_code": 200,
+      "ok": true,
+      "response_time_ms": 495,
+      "checked_at": "2026-06-29T08:00:30.094781Z",
+      "error": null
     },
     {
       "domain": "rooma.mydiscussion.net",
-      "status_code": null,
-      "ok": false,
-      "response_time_ms": 289,
-      "checked_at": "2026-06-29T07:00:30.520365Z",
-      "error": "<urlopen error [Errno 111] Connection refused>"
+      "status_code": 200,
+      "ok": true,
+      "response_time_ms": 513,
+      "checked_at": "2026-06-29T08:00:30.608241Z",
+      "error": null
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 134,
-      "checked_at": "2026-06-29T07:00:30.654623Z",
+      "response_time_ms": 65,
+      "checked_at": "2026-06-29T08:00:30.672878Z",
       "error": null
     }
   ],
-  "updated_at": "2026-06-29T07:00:30.654641Z"
+  "updated_at": "2026-06-29T08:00:30.672892Z"
 }
