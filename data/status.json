@@ -30,50 +30,50 @@
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 290,
-      "checked_at": "2026-06-29T06:00:28.457227Z",
+      "response_time_ms": 225,
+      "checked_at": "2026-06-29T07:00:29.067223Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 581,
-      "checked_at": "2026-06-29T06:00:29.038367Z",
+      "response_time_ms": 603,
+      "checked_at": "2026-06-29T07:00:29.670603Z",
       "error": null
     },
     {
       "domain": "blackblue.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 245,
-      "checked_at": "2026-06-29T06:00:29.283537Z",
+      "response_time_ms": 281,
+      "checked_at": "2026-06-29T07:00:29.951990Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
-      "status_code": 200,
-      "ok": true,
-      "response_time_ms": 1067,
-      "checked_at": "2026-06-29T06:00:30.350848Z",
-      "error": null
+      "status_code": null,
+      "ok": false,
+      "response_time_ms": 279,
+      "checked_at": "2026-06-29T07:00:30.231144Z",
+      "error": "<urlopen error [Errno 111] Connection refused>"
     },
     {
       "domain": "rooma.mydiscussion.net",
-      "status_code": 200,
-      "ok": true,
-      "response_time_ms": 1166,
-      "checked_at": "2026-06-29T06:00:31.516694Z",
-      "error": null
+      "status_code": null,
+      "ok": false,
+      "response_time_ms": 289,
+      "checked_at": "2026-06-29T07:00:30.520365Z",
+      "error": "<urlopen error [Errno 111] Connection refused>"
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 138,
-      "checked_at": "2026-06-29T06:00:31.655158Z",
+      "response_time_ms": 134,
+      "checked_at": "2026-06-29T07:00:30.654623Z",
       "error": null
     }
   ],
-  "updated_at": "2026-06-29T06:00:31.655170Z"
+  "updated_at": "2026-06-29T07:00:30.654641Z"
 }
