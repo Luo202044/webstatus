@@ -31,49 +31,49 @@
       "status_code": 200,
       "ok": true,
       "response_time_ms": 152,
-      "checked_at": "2026-07-17T09:00:32.852661Z",
+      "checked_at": "2026-07-17T10:00:32.548605Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 563,
-      "checked_at": "2026-07-17T09:00:33.415307Z",
+      "response_time_ms": 652,
+      "checked_at": "2026-07-17T10:00:33.201112Z",
       "error": null
     },
     {
       "domain": "blackblue.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 143,
-      "checked_at": "2026-07-17T09:00:33.558246Z",
+      "response_time_ms": 134,
+      "checked_at": "2026-07-17T10:00:33.335181Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
-      "status_code": null,
-      "ok": false,
-      "response_time_ms": 10033,
-      "checked_at": "2026-07-17T09:00:43.590836Z",
-      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+      "status_code": 200,
+      "ok": true,
+      "response_time_ms": 455,
+      "checked_at": "2026-07-17T10:00:33.790356Z",
+      "error": null
     },
     {
       "domain": "rooma.mydiscussion.net",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 15356,
-      "checked_at": "2026-07-17T09:00:58.946671Z",
+      "response_time_ms": 442,
+      "checked_at": "2026-07-17T10:00:34.232407Z",
       "error": null
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 287,
-      "checked_at": "2026-07-17T09:00:59.233520Z",
+      "response_time_ms": 157,
+      "checked_at": "2026-07-17T10:00:34.389350Z",
       "error": null
     }
   ],
-  "updated_at": "2026-07-17T09:00:59.233535Z"
+  "updated_at": "2026-07-17T10:00:34.389368Z"
 }
