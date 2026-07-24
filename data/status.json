@@ -25,7 +25,7 @@
       "name": "[伞吉]智能体"
     },
     {
-      "domain": "ai.api.xn--bgtt50a8xt.top",
+      "domain": "ai.api.xn--bgtt50a8xt.top/api/ai/models",
       "name": "[伞吉]智能体后端"
     },
     {
@@ -38,66 +38,66 @@
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 278,
-      "checked_at": "2026-07-24T05:41:35.452799Z",
+      "response_time_ms": 256,
+      "checked_at": "2026-07-24T05:48:27.945986Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 642,
-      "checked_at": "2026-07-24T05:41:36.094499Z",
+      "response_time_ms": 679,
+      "checked_at": "2026-07-24T05:48:28.625140Z",
       "error": null
     },
     {
       "domain": "blackblue.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 220,
-      "checked_at": "2026-07-24T05:41:36.314257Z",
+      "response_time_ms": 214,
+      "checked_at": "2026-07-24T05:48:28.839180Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 917,
-      "checked_at": "2026-07-24T05:41:37.231614Z",
+      "response_time_ms": 968,
+      "checked_at": "2026-07-24T05:48:29.807113Z",
       "error": null
     },
     {
       "domain": "rooma.mydiscussion.net",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 734,
-      "checked_at": "2026-07-24T05:41:37.965823Z",
+      "response_time_ms": 484,
+      "checked_at": "2026-07-24T05:48:30.291443Z",
       "error": null
     },
     {
       "domain": "sjw.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 839,
-      "checked_at": "2026-07-24T05:41:38.805019Z",
+      "response_time_ms": 714,
+      "checked_at": "2026-07-24T05:48:31.005657Z",
       "error": null
     },
     {
-      "domain": "ai.api.xn--bgtt50a8xt.top",
+      "domain": "ai.api.xn--bgtt50a8xt.top/api/ai/models",
       "status_code": 404,
       "ok": false,
-      "response_time_ms": 172,
-      "checked_at": "2026-07-24T05:41:38.976951Z",
+      "response_time_ms": 99,
+      "checked_at": "2026-07-24T05:48:31.104557Z",
       "error": "HTTP Error 404: Not Found"
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 280,
-      "checked_at": "2026-07-24T05:41:39.256745Z",
+      "response_time_ms": 129,
+      "checked_at": "2026-07-24T05:48:31.233290Z",
       "error": null
     }
   ],
-  "updated_at": "2026-07-24T05:41:39.256763Z"
+  "updated_at": "2026-07-24T05:48:31.233304Z"
 }
