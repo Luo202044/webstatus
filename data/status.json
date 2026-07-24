@@ -39,65 +39,65 @@
       "status_code": 200,
       "ok": true,
       "response_time_ms": 146,
-      "checked_at": "2026-07-24T20:00:36.442902Z",
+      "checked_at": "2026-07-24T21:00:32.372046Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 566,
-      "checked_at": "2026-07-24T20:00:37.008459Z",
+      "response_time_ms": 538,
+      "checked_at": "2026-07-24T21:00:32.910256Z",
       "error": null
     },
     {
       "domain": "blackblue.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 95,
-      "checked_at": "2026-07-24T20:00:37.103204Z",
+      "response_time_ms": 117,
+      "checked_at": "2026-07-24T21:00:33.026823Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 376,
-      "checked_at": "2026-07-24T20:00:37.478815Z",
+      "response_time_ms": 352,
+      "checked_at": "2026-07-24T21:00:33.379248Z",
       "error": null
     },
     {
       "domain": "rooma.mydiscussion.net",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 441,
-      "checked_at": "2026-07-24T20:00:37.920339Z",
+      "response_time_ms": 1419,
+      "checked_at": "2026-07-24T21:00:34.798645Z",
       "error": null
     },
     {
       "domain": "sjw.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 516,
-      "checked_at": "2026-07-24T20:00:38.436811Z",
+      "response_time_ms": 435,
+      "checked_at": "2026-07-24T21:00:35.234154Z",
       "error": null
     },
     {
       "domain": "ai.api.xn--bgtt50a8xt.top/api/ai/models",
       "status_code": 404,
       "ok": false,
-      "response_time_ms": 95,
-      "checked_at": "2026-07-24T20:00:38.531600Z",
+      "response_time_ms": 74,
+      "checked_at": "2026-07-24T21:00:35.308402Z",
       "error": "HTTP Error 404: Not Found"
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 67,
-      "checked_at": "2026-07-24T20:00:38.598769Z",
+      "response_time_ms": 91,
+      "checked_at": "2026-07-24T21:00:35.399025Z",
       "error": null
     }
   ],
-  "updated_at": "2026-07-24T20:00:38.598785Z"
+  "updated_at": "2026-07-24T21:00:35.399040Z"
 }
