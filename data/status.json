@@ -38,66 +38,66 @@
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 415,
-      "checked_at": "2026-07-30T05:00:34.187183Z",
+      "response_time_ms": 114,
+      "checked_at": "2026-07-30T06:00:29.911139Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 5134,
-      "checked_at": "2026-07-30T05:00:39.321275Z",
+      "response_time_ms": 581,
+      "checked_at": "2026-07-30T06:00:30.492376Z",
       "error": null
     },
     {
       "domain": "blackblue.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 534,
-      "checked_at": "2026-07-30T05:00:39.855447Z",
+      "response_time_ms": 107,
+      "checked_at": "2026-07-30T06:00:30.599157Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 433,
-      "checked_at": "2026-07-30T05:00:40.288219Z",
+      "response_time_ms": 531,
+      "checked_at": "2026-07-30T06:00:31.130679Z",
       "error": null
     },
     {
       "domain": "rooma.mydiscussion.net",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 519,
-      "checked_at": "2026-07-30T05:00:40.806869Z",
+      "response_time_ms": 419,
+      "checked_at": "2026-07-30T06:00:31.550062Z",
       "error": null
     },
     {
       "domain": "sjw.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 407,
-      "checked_at": "2026-07-30T05:00:41.213542Z",
+      "response_time_ms": 405,
+      "checked_at": "2026-07-30T06:00:31.955202Z",
       "error": null
     },
     {
       "domain": "ai.api.xn--bgtt50a8xt.top/",
       "status_code": 404,
       "ok": false,
-      "response_time_ms": 334,
-      "checked_at": "2026-07-30T05:00:41.547258Z",
+      "response_time_ms": 85,
+      "checked_at": "2026-07-30T06:00:32.040426Z",
       "error": "HTTP Error 404: Not Found"
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 218,
-      "checked_at": "2026-07-30T05:00:41.765479Z",
+      "response_time_ms": 154,
+      "checked_at": "2026-07-30T06:00:32.194917Z",
       "error": null
     }
   ],
-  "updated_at": "2026-07-30T05:00:41.765495Z"
+  "updated_at": "2026-07-30T06:00:32.194932Z"
 }
