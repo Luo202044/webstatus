@@ -38,48 +38,48 @@
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 156,
-      "checked_at": "2026-08-01T03:00:35.945821Z",
+      "response_time_ms": 99,
+      "checked_at": "2026-08-01T04:00:29.383626Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 600,
-      "checked_at": "2026-08-01T03:00:36.546116Z",
+      "response_time_ms": 624,
+      "checked_at": "2026-08-01T04:00:30.007817Z",
       "error": null
     },
     {
       "domain": "blackblue.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 111,
-      "checked_at": "2026-08-01T03:00:36.656955Z",
+      "response_time_ms": 98,
+      "checked_at": "2026-08-01T04:00:30.105939Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 528,
-      "checked_at": "2026-08-01T03:00:37.184629Z",
+      "response_time_ms": 545,
+      "checked_at": "2026-08-01T04:00:30.650468Z",
       "error": null
     },
     {
       "domain": "rooma.mydiscussion.net",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 436,
-      "checked_at": "2026-08-01T03:00:37.620732Z",
+      "response_time_ms": 492,
+      "checked_at": "2026-08-01T04:00:31.142991Z",
       "error": null
     },
     {
       "domain": "sjw.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 633,
-      "checked_at": "2026-08-01T03:00:38.253924Z",
+      "response_time_ms": 533,
+      "checked_at": "2026-08-01T04:00:31.675763Z",
       "error": null
     },
     {
@@ -87,17 +87,17 @@
       "status_code": 404,
       "ok": false,
       "response_time_ms": 84,
-      "checked_at": "2026-08-01T03:00:38.337490Z",
+      "checked_at": "2026-08-01T04:00:31.760208Z",
       "error": "HTTP Error 404: Not Found"
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 157,
-      "checked_at": "2026-08-01T03:00:38.494200Z",
+      "response_time_ms": 57,
+      "checked_at": "2026-08-01T04:00:31.817680Z",
       "error": null
     }
   ],
-  "updated_at": "2026-08-01T03:00:38.494214Z"
+  "updated_at": "2026-08-01T04:00:31.817693Z"
 }
