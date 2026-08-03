@@ -39,65 +39,65 @@
       "status_code": 200,
       "ok": true,
       "response_time_ms": 249,
-      "checked_at": "2026-08-02T23:00:29.468286Z",
+      "checked_at": "2026-08-03T00:00:30.768912Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 687,
-      "checked_at": "2026-08-02T23:00:30.155805Z",
+      "response_time_ms": 553,
+      "checked_at": "2026-08-03T00:00:31.321937Z",
       "error": null
     },
     {
       "domain": "blackblue.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 240,
-      "checked_at": "2026-08-02T23:00:30.396114Z",
+      "response_time_ms": 236,
+      "checked_at": "2026-08-03T00:00:31.558353Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 997,
-      "checked_at": "2026-08-02T23:00:31.393461Z",
+      "response_time_ms": 708,
+      "checked_at": "2026-08-03T00:00:32.266635Z",
       "error": null
     },
     {
       "domain": "rooma.mydiscussion.net",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 625,
-      "checked_at": "2026-08-02T23:00:32.018860Z",
+      "response_time_ms": 714,
+      "checked_at": "2026-08-03T00:00:32.980907Z",
       "error": null
     },
     {
       "domain": "sjw.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 863,
-      "checked_at": "2026-08-02T23:00:32.882110Z",
+      "response_time_ms": 615,
+      "checked_at": "2026-08-03T00:00:33.596248Z",
       "error": null
     },
     {
       "domain": "ai.api.xn--bgtt50a8xt.top/",
       "status_code": 404,
       "ok": false,
-      "response_time_ms": 143,
-      "checked_at": "2026-08-02T23:00:33.025217Z",
+      "response_time_ms": 152,
+      "checked_at": "2026-08-03T00:00:33.747914Z",
       "error": "HTTP Error 404: Not Found"
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 115,
-      "checked_at": "2026-08-02T23:00:33.140389Z",
+      "response_time_ms": 103,
+      "checked_at": "2026-08-03T00:00:33.851247Z",
       "error": null
     }
   ],
-  "updated_at": "2026-08-02T23:00:33.140402Z"
+  "updated_at": "2026-08-03T00:00:33.851262Z"
 }
