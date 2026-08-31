@@ -38,66 +38,66 @@
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 736,
-      "checked_at": "2026-08-31T08:00:34.919606Z",
+      "response_time_ms": 703,
+      "checked_at": "2026-08-31T09:00:32.987214Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 244,
-      "checked_at": "2026-08-31T08:00:35.163777Z",
+      "response_time_ms": 294,
+      "checked_at": "2026-08-31T09:00:33.281366Z",
       "error": null
     },
     {
       "domain": "blackblue.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 546,
-      "checked_at": "2026-08-31T08:00:35.709735Z",
+      "response_time_ms": 253,
+      "checked_at": "2026-08-31T09:00:33.533961Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 1843,
-      "checked_at": "2026-08-31T08:00:37.552839Z",
+      "response_time_ms": 688,
+      "checked_at": "2026-08-31T09:00:34.222278Z",
       "error": null
     },
     {
       "domain": "rooma.mydiscussion.net",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 799,
-      "checked_at": "2026-08-31T08:00:38.351800Z",
+      "response_time_ms": 707,
+      "checked_at": "2026-08-31T09:00:34.929362Z",
       "error": null
     },
     {
       "domain": "sjw.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 671,
-      "checked_at": "2026-08-31T08:00:39.022626Z",
+      "response_time_ms": 1327,
+      "checked_at": "2026-08-31T09:00:36.256530Z",
       "error": null
     },
     {
       "domain": "ai.api.xn--bgtt50a8xt.top/",
       "status_code": null,
       "ok": false,
-      "response_time_ms": 53,
-      "checked_at": "2026-08-31T08:00:39.075817Z",
+      "response_time_ms": 42,
+      "checked_at": "2026-08-31T09:00:36.298152Z",
       "error": "<urlopen error [Errno -5] No address associated with hostname>"
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 142,
-      "checked_at": "2026-08-31T08:00:39.217837Z",
+      "response_time_ms": 178,
+      "checked_at": "2026-08-31T09:00:36.475820Z",
       "error": null
     }
   ],
-  "updated_at": "2026-08-31T08:00:39.217850Z"
+  "updated_at": "2026-08-31T09:00:36.475833Z"
 }
