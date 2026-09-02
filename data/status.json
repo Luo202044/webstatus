@@ -38,66 +38,66 @@
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": null,
       "ok": false,
-      "response_time_ms": 15338,
-      "checked_at": "2026-09-02T09:00:47.031086Z",
+      "response_time_ms": 15110,
+      "checked_at": "2026-09-02T10:00:49.339042Z",
       "error": "The read operation timed out"
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 354,
-      "checked_at": "2026-09-02T09:00:47.385522Z",
+      "response_time_ms": 1004,
+      "checked_at": "2026-09-02T10:00:50.343398Z",
       "error": null
     },
     {
       "domain": "blackblue.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 105,
-      "checked_at": "2026-09-02T09:00:47.491010Z",
+      "response_time_ms": 129,
+      "checked_at": "2026-09-02T10:00:50.472520Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
-      "status_code": 200,
-      "ok": true,
-      "response_time_ms": 418,
-      "checked_at": "2026-09-02T09:00:47.908901Z",
-      "error": null
+      "status_code": null,
+      "ok": false,
+      "response_time_ms": 337,
+      "checked_at": "2026-09-02T10:00:50.809077Z",
+      "error": "<urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)>"
     },
     {
       "domain": "rooma.mydiscussion.net",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 465,
-      "checked_at": "2026-09-02T09:00:48.373836Z",
+      "response_time_ms": 2507,
+      "checked_at": "2026-09-02T10:00:53.315689Z",
       "error": null
     },
     {
       "domain": "sjw.66ghz.com",
-      "status_code": 200,
-      "ok": true,
-      "response_time_ms": 379,
-      "checked_at": "2026-09-02T09:00:48.752836Z",
-      "error": null
+      "status_code": null,
+      "ok": false,
+      "response_time_ms": 329,
+      "checked_at": "2026-09-02T10:00:53.644548Z",
+      "error": "<urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)>"
     },
     {
       "domain": "ai.api.xn--bgtt50a8xt.top/",
       "status_code": null,
       "ok": false,
-      "response_time_ms": 39,
-      "checked_at": "2026-09-02T09:00:48.792331Z",
+      "response_time_ms": 48,
+      "checked_at": "2026-09-02T10:00:53.692875Z",
       "error": "<urlopen error [Errno -5] No address associated with hostname>"
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 56,
-      "checked_at": "2026-09-02T09:00:48.848373Z",
+      "response_time_ms": 160,
+      "checked_at": "2026-09-02T10:00:53.853367Z",
       "error": null
     }
   ],
-  "updated_at": "2026-09-02T09:00:48.848385Z"
+  "updated_at": "2026-09-02T10:00:53.853380Z"
 }
