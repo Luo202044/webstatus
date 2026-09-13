@@ -39,47 +39,47 @@
       "status_code": 200,
       "ok": true,
       "response_time_ms": 734,
-      "checked_at": "2026-09-13T17:00:36.772596Z",
+      "checked_at": "2026-09-13T18:00:33.805380Z",
       "error": null
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 272,
-      "checked_at": "2026-09-13T17:00:37.044886Z",
+      "response_time_ms": 278,
+      "checked_at": "2026-09-13T18:00:34.082933Z",
       "error": null
     },
     {
       "domain": "blackblue.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 346,
-      "checked_at": "2026-09-13T17:00:37.390957Z",
+      "response_time_ms": 178,
+      "checked_at": "2026-09-13T18:00:34.260856Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 1214,
-      "checked_at": "2026-09-13T17:00:38.604752Z",
+      "response_time_ms": 931,
+      "checked_at": "2026-09-13T18:00:35.191838Z",
       "error": null
     },
     {
       "domain": "rooma.mydiscussion.net",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 672,
-      "checked_at": "2026-09-13T17:00:39.276432Z",
+      "response_time_ms": 639,
+      "checked_at": "2026-09-13T18:00:35.830761Z",
       "error": null
     },
     {
       "domain": "sjw.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 917,
-      "checked_at": "2026-09-13T17:00:40.193592Z",
+      "response_time_ms": 4762,
+      "checked_at": "2026-09-13T18:00:40.592655Z",
       "error": null
     },
     {
@@ -87,17 +87,17 @@
       "status_code": null,
       "ok": false,
       "response_time_ms": 54,
-      "checked_at": "2026-09-13T17:00:40.247913Z",
+      "checked_at": "2026-09-13T18:00:40.646889Z",
       "error": "<urlopen error [Errno -5] No address associated with hostname>"
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 88,
-      "checked_at": "2026-09-13T17:00:40.335818Z",
+      "response_time_ms": 87,
+      "checked_at": "2026-09-13T18:00:40.734163Z",
       "error": null
     }
   ],
-  "updated_at": "2026-09-13T17:00:40.335832Z"
+  "updated_at": "2026-09-13T18:00:40.734177Z"
 }
