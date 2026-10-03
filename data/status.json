@@ -38,66 +38,66 @@
       "domain": "classin.xn--bgtt50a8xt.top",
       "status_code": null,
       "ok": false,
-      "response_time_ms": 15124,
-      "checked_at": "2026-10-03T06:00:44.336131Z",
+      "response_time_ms": 15100,
+      "checked_at": "2026-10-03T07:00:47.315569Z",
       "error": "The read operation timed out"
     },
     {
       "domain": "api.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 734,
-      "checked_at": "2026-10-03T06:00:45.070413Z",
+      "response_time_ms": 283,
+      "checked_at": "2026-10-03T07:00:47.598644Z",
       "error": null
     },
     {
       "domain": "blackblue.xn--bgtt50a8xt.top",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 228,
-      "checked_at": "2026-10-03T06:00:45.298691Z",
+      "response_time_ms": 163,
+      "checked_at": "2026-10-03T07:00:47.761870Z",
       "error": null
     },
     {
       "domain": "cla.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 3142,
-      "checked_at": "2026-10-03T06:00:48.440728Z",
+      "response_time_ms": 948,
+      "checked_at": "2026-10-03T07:00:48.710074Z",
       "error": null
     },
     {
       "domain": "rooma.mydiscussion.net",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 1187,
-      "checked_at": "2026-10-03T06:00:49.627583Z",
+      "response_time_ms": 2662,
+      "checked_at": "2026-10-03T07:00:51.371970Z",
       "error": null
     },
     {
       "domain": "sjw.66ghz.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 1052,
-      "checked_at": "2026-10-03T06:00:50.679601Z",
+      "response_time_ms": 3789,
+      "checked_at": "2026-10-03T07:00:55.160794Z",
       "error": null
     },
     {
       "domain": "ai.api.xn--bgtt50a8xt.top/",
       "status_code": null,
       "ok": false,
-      "response_time_ms": 88,
-      "checked_at": "2026-10-03T06:00:50.767609Z",
-      "error": "<urlopen error [Errno -5] No address associated with hostname>"
+      "response_time_ms": 56,
+      "checked_at": "2026-10-03T07:00:55.217169Z",
+      "error": "<urlopen error [Errno -2] Name or service not known>"
     },
     {
       "domain": "www.idcjk.com",
       "status_code": 200,
       "ok": true,
-      "response_time_ms": 190,
-      "checked_at": "2026-10-03T06:00:50.957248Z",
+      "response_time_ms": 165,
+      "checked_at": "2026-10-03T07:00:55.382302Z",
       "error": null
     }
   ],
-  "updated_at": "2026-10-03T06:00:50.957254Z"
+  "updated_at": "2026-10-03T07:00:55.382315Z"
 }
